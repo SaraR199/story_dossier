@@ -198,17 +198,19 @@ For each section below, spawn THREE agents in sequence:
 2. Read `story-dossier/workflow-state.json` to verify Phase 1 is complete
 3. If Phase 1 incomplete, tell user to run `/generate-story` first
 4. For each section (Characters, World, Romance, Plot):
-   - Spawn expansion agent with blueprint instructions
+   - **Spawn expansion agent using subagent_type="story-architect"** with blueprint instructions
    - Wait for completion, report progress to user
-   - Spawn consistency agent
+   - **Spawn consistency agent using subagent_type="story-architect"**
    - Wait for completion, report progress to user
-   - Spawn resolver agent
+   - **Spawn resolver agent using subagent_type="story-architect"**
    - Wait for completion, report progress to user
    - Update workflow-state.json with completed agents
-5. Spawn global consistency agent
+5. **Spawn global consistency agent using subagent_type="story-architect"**
 6. When complete:
    - Set workflow-state.json: `"phase": "deep_complete"`, `"deep_complete": true`
    - Tell user: "Phase 2 complete! Your story dossier is ready in story-dossier/deep/. Review the consistency reports to see what was validated and fixed."
+
+**Important**: All agents must use the story-architect subagent type. This agent is specifically designed for creative story development work (not code).
 
 **Use extended thinking mode when spawning agents to ensure quality.**
 
