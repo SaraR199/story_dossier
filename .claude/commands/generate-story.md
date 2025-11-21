@@ -58,10 +58,12 @@ Not implemented yet. Will be triggered by `/deepen-story` command.
 2. Check if input.yaml has been filled out (tropes, genre, etc.)
 3. If not filled, tell user to complete input.yaml first
 4. If filled, begin Phase 1 by spawning agents in sequence
-5. Use the Task tool with subagent_type="general-purpose" to spawn each agent
+5. **Use the Task tool with subagent_type="story-architect" to spawn each agent** (this is a custom agent optimized for story development)
 6. Pass detailed instructions to each agent about what to read and write
 7. After each agent completes, update workflow-state.json
 8. Report progress after each completion
 9. When all 5 agents complete, announce Phase 1 done
+
+**Important**: All agents must use the story-architect subagent type. This agent is specifically designed for creative story development work (not code).
 
 **Start now.**

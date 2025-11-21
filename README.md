@@ -199,8 +199,29 @@ The orchestrator commands (`/generate-story`, `/deepen-story`, `/integrate-story
 
 They never read the story content, keeping context minimal.
 
+### Custom Story Development Agent
+All subagents use the **story-architect** agent (`.claude/agents/story-architect.md`), a custom agent optimized for creative story development:
+
+**Why a custom agent?**
+- Focused on story planning, not code
+- Trained to avoid generic "LLM soup" outputs
+- Emphasizes logical consistency and unique details
+- Understands fantasy romance genre conventions
+- Actively avoids clichés and overused tropes
+- Thinks in terms of character motivation, world logic, and emotional resonance
+
+**What makes it different from code agents?**
+- No code-focused thinking or terminology
+- Prioritizes creative problem-solving over technical solutions
+- Validates story logic, not code logic
+- Creates cohesive narratives, not modular functions
+- Focuses on emotional truth and character authenticity
+
+All workflow phases use this same agent persona for consistency.
+
 ### Heavy-Context Subagents
 Each specialized agent:
+- Uses the story-architect agent type
 - Reads only what it needs from previous outputs
 - Uses extended thinking mode for quality
 - Writes focused outputs

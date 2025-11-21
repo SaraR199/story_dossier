@@ -143,7 +143,7 @@ For each section below, spawn ONE integration agent:
 
 1. Read `story-dossier/workflow-state.json` to verify Phase 2 is complete
 2. If Phase 2 incomplete, tell user to run `/deepen-story` first
-3. Spawn agents in sequence:
+3. Spawn agents in sequence using **subagent_type="story-architect"**:
    - Character integration agent
    - Wait for completion, report progress to user
    - World integration agent
@@ -158,6 +158,8 @@ For each section below, spawn ONE integration agent:
 5. When complete:
    - Set workflow-state.json: `"phase": "integration_complete"`, `"integration_complete": true`
    - Tell user: "Phase 3 complete! Your story dossier is now fully integrated. Review the integration-notes.md files in each section to see what was enhanced. Check cohesion-report.md for overall assessment."
+
+**Important**: All agents must use the story-architect subagent type. This agent is specifically designed for creative story development work (not code).
 
 **Use extended thinking mode when spawning agents to ensure quality integration.**
 
