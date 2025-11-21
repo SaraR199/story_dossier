@@ -4,12 +4,13 @@ An automated AI-assisted workflow for fantasy romance authors to generate compre
 
 ## What This Does
 
-This system helps you go from **tropes + genre + research** → **complete story dossier** in two phases:
+This system helps you go from **tropes + genre + research** → **complete story dossier** in three phases:
 
 1. **Phase 1 (Lightweight)**: Fast generation of core concepts - premise, characters, world, romance arc, plot structure
 2. **Phase 2 (Deep Development)**: Iterative expansion with contradiction checking and plot hole detection
+3. **Phase 3 (Integration)**: Sharpen each section using specifics from all others for maximum cohesion
 
-The result: A detailed, internally consistent story dossier ready for outline generation.
+The result: A detailed, internally consistent, deeply integrated story dossier ready for outline generation.
 
 ## Directory Structure
 
@@ -27,14 +28,29 @@ story-dossier/
 │   ├── 03-world-concept.md
 │   ├── 04-romance-arc.md
 │   └── 05-plot-structure.md
-└── deep/                       # Phase 2 outputs
+└── deep/                       # Phase 2 & 3 outputs
     ├── characters/
     │   ├── main-characters.md
     │   ├── consistency-check.md
-    │   └── resolution-notes.md
+    │   ├── resolution-notes.md
+    │   └── integration-notes.md
     ├── world/
+    │   ├── world-bible.md
+    │   ├── consistency-check.md
+    │   ├── resolution-notes.md
+    │   └── integration-notes.md
     ├── romance/
-    └── plot/
+    │   ├── romance-arc-detailed.md
+    │   ├── consistency-check.md
+    │   ├── resolution-notes.md
+    │   └── integration-notes.md
+    ├── plot/
+    │   ├── detailed-structure.md
+    │   ├── consistency-check.md
+    │   ├── resolution-notes.md
+    │   └── integration-notes.md
+    ├── final-consistency-report.md
+    └── cohesion-report.md
 ```
 
 ## Blueprint System
@@ -128,19 +144,56 @@ This spawns 12 specialized agents (3 per section) that will:
 
 **Time**: ~20-30 minutes (agents run sequentially)
 
-### Step 5: Final Review
+### Step 5: Review Phase 2 Outputs
 
 Review the files in `deep/` especially:
 - `consistency-check.md` files show what issues were found
 - `resolution-notes.md` files show how they were fixed
 - `final-consistency-report.md` shows overall analysis
 
+**Make any edits you want** directly in these files before moving to Phase 3.
+
+### Step 6: Run Phase 3 (Integration Enhancement)
+
+When you're satisfied with the validated sections, run:
+```
+/integrate-story
+```
+
+This spawns 5 specialized agents that will:
+
+**Integration Refinement (one agent per section):**
+1. **Character Integration**: Sharpen characters using specifics from world/romance/plot
+2. **World Integration**: Adjust world to amplify character conflicts and romance situations
+3. **Romance Integration**: Heighten chemistry using character wounds and world constraints
+4. **Plot Integration**: Make plot showcase character growth and leverage world mechanics
+5. **Cohesion Check**: Verify integration enhanced cohesion without breaking consistency
+
+**The Goal:** Make sections **amplify** each other, not just coexist.
+
+**Examples of integration:**
+- Character trait creates friction with specific world rule
+- World magic system forces exact romance trope situations
+- Romance beats align perfectly with plot turning points
+- Plot obstacles arise from character flaws + world constraints
+
+**Output**: Each section edited in place with `integration-notes.md` files showing enhancements
+
+**Time**: ~15-20 minutes (agents run sequentially)
+
+### Step 7: Final Review
+
+Review the integration results:
+- `integration-notes.md` files in each section show what was enhanced and why
+- `cohesion-report.md` shows overall assessment with cohesion score
+- The complete dossier should feel like an integrated whole, not separate pieces
+
 The story dossier is now ready for outline generation!
 
 ## Architecture: Why It's Built This Way
 
 ### Lightweight Orchestrator
-The orchestrator commands (`/generate-story`, `/deepen-story`) read ONLY:
+The orchestrator commands (`/generate-story`, `/deepen-story`, `/integrate-story`) read ONLY:
 - `input.yaml` (your inputs)
 - `workflow-state.json` (progress tracking)
 
