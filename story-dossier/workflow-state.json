@@ -1,0 +1,10 @@
+{
+  "phase": "not_started",
+  "lightweight_complete": false,
+  "deep_complete": false,
+  "completed_agents": [],
+  "current_agent": null,
+  "validation_status": "pending",
+  "errors": [],
+  "timestamp": null
+}

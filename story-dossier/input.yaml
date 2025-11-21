@@ -1,0 +1,47 @@
+# Story Dossier Input
+# Fill this out to generate your story dossier
+
+# Basic Story Setup
+title: "Untitled Fantasy Romance"
+genre: "fantasy romance"
+subgenre: "epic fantasy romance"  # e.g., epic, urban, cozy, dark, etc.
+heat_level: "steamy"  # sweet, steamy, explicit
+target_audience: "adult"  # YA, NA, adult
+
+# Structure
+chapter_count: 26
+target_word_count: 80000
+
+# Romance Tropes (list all that apply)
+tropes:
+  - "enemies to lovers"
+  - "forced proximity"
+  - ""  # add more as needed
+
+# Additional Story Elements
+magic_system_preference: ""  # e.g., "hard magic", "soft magic", "elemental", "none"
+setting_preference: ""  # e.g., "medieval-inspired", "contemporary with magic", "alternate world"
+tone: ""  # e.g., "dark and brooding", "light and hopeful", "witty and fun"
+
+# Genre Research & Inspiration
+# Paste your research, comp title notes, trope analysis, anything that informs this story
+research: |
+  Comp titles:
+  -
+
+  Trope notes:
+  -
+
+  Market research:
+  -
+
+  Inspiration:
+  -
+
+# Optional: Any specific elements you want included
+must_include:
+  - ""  # e.g., "dragon bond", "political intrigue", "heist sequence"
+
+# Optional: Any elements to avoid
+avoid:
+  - ""  # e.g., "love triangles", "miscommunication as main conflict"
