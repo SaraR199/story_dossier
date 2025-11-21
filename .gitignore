@@ -1,0 +1,9 @@
+# Story Dossier Generated Content
+# These should only exist in book-specific branches, not in main
+
+story-dossier/lightweight/
+story-dossier/deep/
+
+# Keep the directories themselves but ignore generated content
+!story-dossier/lightweight/.gitkeep
+!story-dossier/deep/.gitkeep

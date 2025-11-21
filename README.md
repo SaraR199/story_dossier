@@ -225,6 +225,68 @@ Configured for:
 Edit the orchestrator commands in `.claude/commands/`:
 - `generate-story.md` - Phase 1 logic
 - `deepen-story.md` - Phase 2 logic
+- `integrate-story.md` - Phase 3 logic
+
+## Managing Multiple Book Projects
+
+This workflow is designed for **branch-per-book** project management. Each book gets its own branch while sharing the workflow system and blueprints.
+
+### Quick Start: New Book Project
+
+```bash
+# Start from main branch
+git checkout main
+git pull
+
+# Create branch for your new book
+git checkout -b book/your-book-name
+
+# Fill out story-dossier/input.yaml with your story details
+# Run the workflow: /generate-story → /deepen-story → /integrate-story
+# Commit your completed story dossier
+
+git add story-dossier/
+git commit -m "Complete story dossier for [Book Name]"
+git push -u origin book/your-book-name
+```
+
+### Switch Between Book Projects
+
+```bash
+# Work on a different book
+git checkout book/shadow-king
+
+# Your story-dossier/ automatically switches to that book's content
+# Make edits, run commands, commit changes
+
+# Switch to another book
+git checkout book/blood-bonds
+```
+
+### Update Workflow Across All Books
+
+When you improve the workflow or add new blueprints:
+
+```bash
+# Update on main
+git checkout main
+# Make your workflow improvements
+git commit and push
+
+# Merge to your book branches
+git checkout book/your-book-name
+git merge main
+git push
+```
+
+### Branch Structure
+
+- **main**: Workflow system, blueprints, documentation (no book content)
+- **book/[name]**: Individual book branches (contain story content)
+- Each book branch can be worked on independently
+- Workflow updates on main can be merged to all book branches
+
+**See WORKFLOW.md for detailed multi-project workflow documentation.**
 
 ## Troubleshooting
 
