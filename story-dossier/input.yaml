@@ -12,6 +12,11 @@ target_audience: "adult"  # YA, NA, adult
 chapter_count: 26
 target_word_count: 80000
 
+# Blueprint Selection
+# Choose which blueprint structure to use for the deep phase
+# Available blueprints: epic-fantasy-romance, [add others as you create them]
+blueprint: "epic-fantasy-romance"
+
 # Romance Tropes (list all that apply)
 tropes:
   - "enemies to lovers"

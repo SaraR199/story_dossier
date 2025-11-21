@@ -17,6 +17,10 @@ The result: A detailed, internally consistent story dossier ready for outline ge
 story-dossier/
 ├── input.yaml                  # YOU FILL THIS OUT
 ├── workflow-state.json         # Tracks progress (auto-managed)
+├── blueprints/                 # Blueprint templates for different genres
+│   ├── epic-fantasy-romance.md
+│   ├── cozy-fantasy-romance.md (add your own)
+│   └── [your-custom-blueprint].md
 ├── lightweight/                # Phase 1 outputs
 │   ├── 01-story-concept.md
 │   ├── 02-character-concept.md
@@ -33,11 +37,43 @@ story-dossier/
     └── plot/
 ```
 
+## Blueprint System
+
+**What are blueprints?**
+Blueprints are structured templates that define exactly what fields and sections your story dossier should contain. Each blueprint is tailored to a specific genre or story type.
+
+**Why use blueprints?**
+- Ensures Phase 2 outputs have YOUR preferred structure
+- Different genres need different information (epic fantasy vs contemporary romance)
+- Agents intelligently fill out YOUR template, not a generic one
+- Consistent format across all your projects
+
+**How it works:**
+1. You select a blueprint in `input.yaml` (e.g., `blueprint: "epic-fantasy-romance"`)
+2. Phase 2 agents read that blueprint file from `story-dossier/blueprints/`
+3. Agents intelligently identify which sections relate to their task (characters, world, romance, plot)
+4. Agents fill out those sections using the lightweight concepts from Phase 1
+5. Output follows your blueprint's exact structure and field names
+
+**Creating custom blueprints:**
+1. Copy an existing blueprint from `story-dossier/blueprints/`
+2. Modify sections, add/remove fields, reorganize as needed
+3. Save with a descriptive name (e.g., `urban-fantasy-romance.md`)
+4. Update `input.yaml` to use your new blueprint
+5. Agents will automatically adapt to your custom structure
+
+**Blueprint flexibility:**
+- Each blueprint can have completely different sections
+- Agents use AI to identify relevant sections (no hardcoded mapping)
+- You can reorganize, rename, or restructure however you want
+- Perfect for authors with specific workflows or genre requirements
+
 ## How to Use
 
 ### Step 1: Fill Out Your Inputs
 
 Edit `story-dossier/input.yaml` with:
+- **Blueprint selection** - choose which blueprint structure to use
 - Romance tropes you want to explore
 - Genre/subgenre
 - Chapter count
