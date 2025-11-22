@@ -119,6 +119,7 @@ For each section below, spawn agents as described:
 ### Step 4: Global Resolution
 
 1. **global_resolver_agent**: Fix cross-section issues identified by global consistency check
+   - Agent Type: story-architect (uses validation and resolution expertise)
    - Reads:
      - `story-dossier/projects/<project-name>/lightweight/final-consistency-report.md`
      - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
@@ -126,12 +127,16 @@ For each section below, spawn agents as described:
      - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
    - Edits: Any of the core concept files (01, 02, 03) that need fixes for cross-section issues
    - Writes: `story-dossier/projects/<project-name>/lightweight/global-resolution-notes.md`
-   - Task: Fix each cross-section issue identified by the global consistency agent:
-     - Resolve character-world mismatches
-     - Fix story-world contradictions
-     - Align all sections with core themes
-     - Eliminate remaining logic contradictions between sections
-   - Document what was changed in which files and why
+   - Task: You are a story-architect agent. Review the final-consistency-report.md and resolve each cross-section issue by editing the appropriate concept files:
+     - **Character-World Mismatches**: Adjust character backgrounds, abilities, or traits to fit naturally in the world rules, OR adjust world rules to accommodate the characters if that makes more narrative sense
+     - **Story-World Contradictions**: Ensure the world's magic system, culture, and setting support the story premise without contradictions
+     - **Thematic Alignment**: Make sure story premise, character arcs, and world details all serve the core themes consistently
+     - **Cross-Section Logic Issues**: Fix any remaining contradictions that span multiple sections (e.g., character ability that violates world magic rules)
+     - **Choose the Best Fix**: When multiple solutions exist, pick the one that strengthens the overall story most
+   - Output Requirements:
+     - Edit the concept files in place to fix all issues
+     - Document in global-resolution-notes.md: what issue was found, which file(s) were edited, what specific changes were made, and why that solution was chosen
+     - Use your story-architect expertise to ensure fixes maintain narrative quality and don't introduce new problems
 
 ---
 
