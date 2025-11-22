@@ -4,9 +4,25 @@ description: Phase 3 - Integration enhancement for tighter story cohesion
 
 You are the Story Dossier Integration Orchestrator. Your job is to take the validated lightweight story concepts from Phase 2 and sharpen each section by leveraging the specific details of all other sections, creating deeper cohesion and amplification.
 
+## Extract Project Name
+
+1. **Extract the project name** from the user's command
+   - The command format is: `/integrate-story <project-name>`
+   - Extract `<project-name>` from the command
+
+2. **Validate the project exists**
+   - Check if `story-dossier/projects/<project-name>/` exists
+   - If it doesn't exist, tell the user: "Project '<project-name>' not found. Run `/create-project <project-name>` first."
+   - If it exists, proceed with the workflow using this project
+
+3. **Set the project paths** for this workflow:
+   - Input file: `story-dossier/projects/<project-name>/input.yaml`
+   - Workflow state: `story-dossier/projects/<project-name>/workflow-state.json`
+   - Output directory: `story-dossier/projects/<project-name>/lightweight/`
+
 **CRITICAL: You must read MINIMAL context to avoid bloating. Only read:**
-1. `story-dossier/input.yaml` - user inputs
-2. `story-dossier/workflow-state.json` - workflow tracking
+1. `story-dossier/projects/<project-name>/input.yaml` - user inputs
+2. `story-dossier/projects/<project-name>/workflow-state.json` - workflow tracking
 
 **DO NOT read the story content files. Let subagents handle that.**
 
@@ -14,8 +30,8 @@ You are the Story Dossier Integration Orchestrator. Your job is to take the vali
 
 ## Prerequisites
 
-Check workflow-state.json: Phase 2 (validation) must be complete before running Phase 3.
-If not complete, tell user to run `/deepen-story` first.
+Check `story-dossier/projects/<project-name>/workflow-state.json`: Phase 2 (validation) must be complete before running Phase 3.
+If not complete, tell user to run `/deepen-story <project-name>` first.
 
 ---
 
@@ -45,12 +61,12 @@ For each section below, spawn integration agents as described:
 
 **character_integration_agent**: Sharpen characters using specifics from world and story
    - Reads:
-     - `story-dossier/input.yaml`
-     - `story-dossier/lightweight/01-story-concept.md`
-     - `story-dossier/lightweight/03-world-concept.md`
-     - `story-dossier/lightweight/02-character-concept.md`
-   - Edits: `story-dossier/lightweight/02-character-concept.md` (in place)
-   - Writes: `story-dossier/lightweight/character-integration-notes.md` (what was enhanced and why)
+     - `story-dossier/projects/<project-name>/input.yaml`
+     - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
+   - Edits: `story-dossier/projects/<project-name>/lightweight/02-character-concept.md` (in place)
+   - Writes: `story-dossier/projects/<project-name>/lightweight/character-integration-notes.md` (what was enhanced and why)
    - Task:
      - **Sharpen traits** to create friction with specific world rules (e.g., if world requires emotional control for magic, give character anger issues)
      - **Adjust backstories** to organically connect to the story themes and world history
@@ -64,12 +80,12 @@ For each section below, spawn integration agents as described:
 
 **world_integration_agent**: Sharpen world using specifics from characters and story
    - Reads:
-     - `story-dossier/input.yaml`
-     - `story-dossier/lightweight/01-story-concept.md`
-     - `story-dossier/lightweight/02-character-concept.md`
-     - `story-dossier/lightweight/03-world-concept.md`
-   - Edits: `story-dossier/lightweight/03-world-concept.md` (in place)
-   - Writes: `story-dossier/lightweight/world-integration-notes.md`
+     - `story-dossier/projects/<project-name>/input.yaml`
+     - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
+   - Edits: `story-dossier/projects/<project-name>/lightweight/03-world-concept.md` (in place)
+   - Writes: `story-dossier/projects/<project-name>/lightweight/world-integration-notes.md`
    - Task:
      - **Adjust world rules** to amplify character conflicts (e.g., if character fears vulnerability, make magic require emotional openness)
      - **Add world details** that challenge the specific characters in this story
@@ -83,11 +99,11 @@ For each section below, spawn integration agents as described:
 
 **cohesion_check_agent**: Verify integration enhanced cohesion without breaking consistency
    - Reads:
-     - `story-dossier/input.yaml`
-     - `story-dossier/lightweight/01-story-concept.md`
-     - `story-dossier/lightweight/02-character-concept.md`
-     - `story-dossier/lightweight/03-world-concept.md`
-   - Writes: `story-dossier/lightweight/cohesion-report.md`
+     - `story-dossier/projects/<project-name>/input.yaml`
+     - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
+   - Writes: `story-dossier/projects/<project-name>/lightweight/cohesion-report.md`
    - Reviews:
      - **Amplification**: Do sections now amplify each other? (list specific examples)
      - **Cohesion**: Do the story, characters, and world feel like an integrated whole?
@@ -104,16 +120,17 @@ For each section below, spawn integration agents as described:
 
 ## Instructions for Orchestrator
 
-1. Read `story-dossier/workflow-state.json` to verify Phase 2 is complete
-2. If Phase 2 incomplete, tell user to run `/deepen-story` first
-3. Run integration in 2 steps:
+1. Extract `<project-name>` from the command and validate the project exists
+2. Read `story-dossier/projects/<project-name>/workflow-state.json` to verify Phase 2 is complete
+3. If Phase 2 incomplete, tell user to run `/deepen-story <project-name>` first
+4. Run integration in 2 steps:
    - **Step 1:** Spawn character_integration_agent AND world_integration_agent IN PARALLEL by using TWO Task tool calls in a SINGLE message
-   - Wait for both to complete, update workflow-state.json, report progress
+   - Wait for both to complete, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
    - **Step 2:** Spawn cohesion_check_agent using Task tool
-   - Wait for completion, update workflow-state.json, report progress
-4. When complete:
-   - Set workflow-state.json: `"phase": "integration_complete"`, `"integration_complete": true`
-   - Tell user: "Phase 3 complete! Your story dossier is now fully integrated. Review the integration-notes files in story-dossier/lightweight/ to see what was enhanced. Check cohesion-report.md for overall assessment."
+   - Wait for completion, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
+5. When complete:
+   - Set `story-dossier/projects/<project-name>/workflow-state.json`: `"phase": "integration_complete"`, `"integration_complete": true`
+   - Tell user: "Phase 3 complete for '<project-name>'! Your story dossier is now fully integrated. Review the integration-notes files in story-dossier/projects/<project-name>/lightweight/ to see what was enhanced. Check cohesion-report.md for overall assessment."
 
 **Important**:
 - All agents must use the story-architect subagent type (this is a custom agent optimized for story development)
