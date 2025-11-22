@@ -186,6 +186,14 @@ Beyond dragon affinities, there's older magic in the world—remnants from when 
 
 **Blood Magic:** Forbidden but known. Using dragon blood in rituals can achieve powerful effects—bindings, curses, tracking. It requires sacrifice and leaves traces. Someone who massacres an entire clan would leave enormous blood magic signatures... if you knew how to look for them and were willing to risk approaching the site. The Volkov ruins' blood magic residue is not just evidence—it's actively dangerous, creating magical distortions that make investigation risky. Additionally, most dragons lack the specialized knowledge to interpret blood magic traces, and those who possess such knowledge are rare and rarely willing to get involved in clan politics. The combination of physical danger, specialized skill requirements, and political sensitivity has kept the massacre site uninvestigated for three years.
 
+**The Ancient Threat - The Unbound:** Buried in the ruins of old dragon territories—places where dragons ruled openly before the Veil—are remnants of the first dragons. Not the current clans, but something older: dragons who refused to accept the Veil, who wanted to rule humanity openly rather than hide. When the Veil was created, these ancient dragons were forcibly bound into a magical sleep by the collective will of those who chose concealment. They've slumbered for centuries in forgotten places, their power slowly eroding the bindings.
+
+The Volkov massacre's massive blood magic discharge—an entire clan's lifeblood spilled in a concentrated area—created a magical shockwave that weakened the bindings across multiple sites. The conspiracy orchestrating clan conflicts isn't random: someone is deliberately engineering bloodshed at specific locations (old dragon territories, sites of ancient power) to further destabilize the bindings. Each major conflict, each massacre, each territory war weakens the sleep-spell a little more.
+
+The threat manifests as disturbances: territories becoming hostile to dragon presence, magical storms that resist the Veil, ancient wards activating in places that should be dormant. Elder dragons are having prophetic nightmares of something waking. The danger isn't that the Unbound will emerge as organized antagonists—most of them have been sleeping so long they're more force of nature than conscious beings. The danger is that if they fully wake, their mere presence will shatter the Veil. They're too powerful, too old, too alien to hide. Their awakening means exposure, and exposure means war with humanity that dragons cannot afford.
+
+The conspiracy's goal: wake the Unbound enough to shatter the Veil and force dragons into open conflict with humanity, destroying both dragon society and the modern world order in the chaos. Who benefits from this apocalyptic scenario remains to be discovered.
+
 **Prophecies & Portents:** The eldest dragons sometimes experience visions. These are vague, symbolic, unreliable—but also eerily accurate in retrospect. Nobody knows if they're seeing the future or just possibilities. Dragon society dismisses prophecy publicly while quietly scrambling to interpret it.
 
 ### What Magic Can't Do
@@ -199,7 +207,7 @@ Beyond dragon affinities, there's older magic in the world—remnants from when 
 
 Magic is leverage. Ancient artifacts are symbols of legitimacy. Dragons with strong affinities are valued as enforcers. Blood magic is a terrifying rumor used to keep enemies off-balance.
 
-The conspiracy driving the plot involves someone using old magic—possibly blood magic from the Volkov massacre—to manipulate clan conflicts. The ancient threat awakening is something older than current dragon clans, tied to the ruins of territories where dragons ruled openly before the Veil.
+The conspiracy driving the plot involves someone with deep knowledge of ancient dragon magic deliberately engineering bloodshed at specific locations to wake the Unbound. The Volkov massacre was the opening move—a massive blood magic ritual disguised as clan warfare. Each subsequent conflict the conspirators engineer (territorial disputes, assassinations, proxy wars) is strategically located at sites where the Unbound sleep, further weakening the bindings. The conspiracy's success depends on dragon clans remaining fractured and suspicious—unity would allow them to recognize the pattern and investigate properly. This is why Darius's unification efforts are so dangerous to the conspirators, and why Sera's Volkov heritage (truth-seeking, information analysis) and Alexei's specialized knowledge (blood magic interpretation) are crucial to exposing the plot.
 
 ## Key Locations
 
