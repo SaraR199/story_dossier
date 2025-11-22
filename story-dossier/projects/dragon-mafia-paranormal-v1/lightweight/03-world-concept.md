@@ -6,35 +6,37 @@
 
 Dragon society is built on five major bloodlines, each controlling distinct territories and criminal enterprises. These aren't ancient fantasy kingdoms—they're modern organized crime families with supernatural power backing their influence.
 
+**Note on Geography:** This world is an alternate version of Earth with similar geography and modern technology, but with an established supernatural underworld hidden beneath human society.
+
 **The Kael Clan (Fire Dragons)**
-- Territory: Eastern seaboard urban centers and port cities
+- Territory: Eastern seaboard urban centers and port cities (primarily operating out of a major northeastern metropolis equivalent to New York/Boston)
 - Enterprise: Weapons smuggling, protection rackets, high-end antiquities trafficking
 - Reputation: Most powerful and ruthless; known for scorched-earth tactics
 - Leadership: Darius Kael (heir apparent), with a fractured council of elders who distrust his unification plans
 - Clan culture: Values strength and decisiveness; sees compromise as weakness
 
 **The Volkov Clan (Storm Dragons)**
-- Territory: DESTROYED three years ago; remnants scattered among other clans or hiding in human society
+- Territory: DESTROYED three years ago; formerly held mid-Atlantic territories; remnants scattered among other clans or hiding in human society
 - Former enterprise: Information brokerage, surveillance, contract enforcement
 - Reputation: Were known as mediators and truth-seekers; their destruction destabilized clan politics
 - What remains: A handful of survivors, including Sera, who've either gone into hiding or been absorbed into other clans as low-status refugees
 
 **The Shen Clan (Shadow Dragons)**
-- Territory: West coast cities, underground markets
+- Territory: West coast urban centers and underground markets (Pacific coastal cities)
 - Enterprise: Smuggling (magical artifacts, supernatural beings), gambling, identity falsification
 - Reputation: Secretive and pragmatic; masters of remaining unseen
 - Leadership: Matriarch Mei Shen, who plays all sides and trusts no one
 - Clan culture: Information is power; secrets are currency
 
 **The Rothko Clan (Earth Dragons)**
-- Territory: Mountain territories, mining operations, rural strongholds
+- Territory: Mountain and inland territories (Rockies, Appalachian ranges), mining operations, rural strongholds
 - Enterprise: Real estate, construction, resource extraction, money laundering
 - Reputation: Old-fashioned and traditional; resistant to change
 - Leadership: Elder Council rather than single alpha; deeply opposed to Darius's power grab
 - Clan culture: Values tradition, bloodline purity, and established hierarchies
 
 **The Navarro Clan (Ice Dragons)**
-- Territory: Northern territories, cross-border operations
+- Territory: Northern territories (Canadian border regions), cross-border operations
 - Enterprise: Drug trafficking, human/supernatural smuggling, contract killing
 - Reputation: Brutal and unpredictable; willing to break clan codes if it serves them
 - Leadership: Alejandra Navarro, young and ambitious, sees Darius as both threat and potential ally
@@ -44,15 +46,15 @@ Dragon society is built on five major bloodlines, each controlling distinct terr
 
 Each clan follows a parallel structure to traditional mafia families:
 
-**Alpha/Boss:** The supreme leader. Commands absolute loyalty (in theory). Their word is law within their territory. Usually inherits position through bloodline, but can be challenged through formal combat or political maneuvering.
+**Alpha/Boss:** The supreme leader. Commands absolute loyalty and their word is law within their territory—in practice. In theory, the Council can check their power, but this is rarely invoked. Usually inherits position through bloodline, but can be challenged through formal combat or political maneuvering.
 
-**Council of Elders:** Senior dragons who've proven themselves through decades of service. They advise the Alpha, manage clan resources, and can theoretically override the Alpha with unanimous vote (though this rarely happens and usually signals imminent civil war within the clan).
+**Council of Elders:** Senior dragons who've proven themselves through decades of service. They advise the Alpha, manage clan resources, and hold constitutional power to override the Alpha with unanimous vote. This power is almost never used because achieving unanimity is nearly impossible and attempting to override an Alpha typically triggers civil war within the clan. In most clans, the Council's power is theoretical; in practice, a strong Alpha dominates. The Rothko Clan is the exception—they've maintained true Council rule rather than a single Alpha, making them unique in dragon society and deeply resistant to Darius's centralized leadership model.
 
 **Captains/Sentinels:** Control specific territories or enterprises within the clan's domain. They manage enforcers, collect tribute, and report directly to the Alpha. Most clan politics happen at this level—ambitious captains jockeying for influence, forming factions, making deals.
 
-**Enforcers/Soldiers:** The muscle. They carry out orders, protect clan interests, and handle the violent work. This is where Sera has been operating—low enough to be overlooked, high enough to get close to important players.
+**Enforcers/Soldiers:** The muscle. They carry out orders, protect clan interests, and handle the violent work. Full clan members only—you must pledge loyalty to hold this rank.
 
-**Associates:** Not full clan members. May be human allies, dragons from destroyed clans, or those seeking to prove themselves for formal membership. Lowest status, most expendable.
+**Associates:** Not full clan members. May be human allies, dragons from destroyed clans, or those seeking to prove themselves for formal membership. Lowest status, most expendable. Sera operates at this level—technically an Associate, but she's proven herself capable enough to be assigned enforcer-level work without the formal title or trust. This gives her access to important players while keeping her status precarious and her position always under scrutiny.
 
 **Mates:** Complicated position. A mated dragon holds status through their bonded partner, but mates of high-ranking dragons (especially the Alpha) wield significant informal power. Mating bonds are sacred in dragon culture, even when everything else is negotiable.
 
@@ -100,7 +102,7 @@ Dragon society operates on unwritten rules that everyone knows and most follow�
 
 These codes are aspirational. Clans constantly test boundaries, looking for loopholes. Assassinations happen but are made to look like accidents or human crime. Territory violations occur through shell companies and proxies. The code is propaganda that helps maintain order while everyone quietly breaks it.
 
-The Volkov Clan massacre violated the code spectacularly—you don't annihilate an entire bloodline, especially not one known for neutrality and mediation. That's what convinced Sera that Darius is a monster. What she doesn't know yet is that the massacre violated the code so egregiously that even Darius's own allies questioned it, and someone went to great lengths to make it look like Kael clan work.
+The Volkov Clan massacre violated the code spectacularly—you don't annihilate an entire bloodline, especially not one known for neutrality and mediation. That's what convinced Sera that Darius is a monster. What she doesn't know yet is that the massacre violated the code so egregiously that even Darius's own allies questioned it, and someone went to great lengths to make it look like Kael clan work while leaving just enough ambiguity to prevent unified retaliation. The other clans wanted proof before starting a war with the most powerful clan, and the evidence was contradictory enough that no one could afford to move first. This created a cold war standoff rather than open conflict—everyone suspicious, no one certain enough to act.
 
 ### Relationship with Human World
 
@@ -114,7 +116,7 @@ The human world is both camouflage and hunting ground. Dragons are apex predator
 
 ### Physical Nature
 
-**Two Forms:** Dragons have a human form (their default for navigating the modern world) and a dragon form (massive, destructive, powerful, and impossible to hide). Shifting is painful and energy-intensive. Most dragons avoid shifting in urban areas due to the Veil—a dragon appearing in downtown Manhattan would require massive magical cleanup and memory alteration.
+**Two Forms:** Dragons have a human form (their default for navigating the modern world) and a dragon form (massive, destructive, powerful, and impossible to hide). Shifting is painful and energy-intensive. Dragons avoid shifting in urban areas due to the Veil—a dragon appearing in a populated city would require massive magical cleanup and memory alteration, making it a last resort reserved for life-or-death situations. This means most clan conflicts play out in human form or at remote locations where dragon form can be used without exposure risk.
 
 **Dragon Form Characteristics:**
 - Size varies by age and bloodline (older = bigger; clan alphas are massive)
@@ -136,7 +138,9 @@ This is where dragon biology becomes mystical and non-negotiable.
 
 **Completion:** The bond isn't complete until claimed—a combination of physical consummation and a ritual exchange of blood that's intensely private. Once completed, the bond is permanent. Losing a mate after completion often drives dragons mad or kills them. This makes the mated bond both sacred and weaponizable—killing a dragon's mate destroys them.
 
-**Political Implications:** Mating bonds carry enormous political weight. An Alpha's choice of mate signals alliances and priorities. Darius asking Sera to pose as his potential mate is politically explosive—it suggests he's considering bonding with a Volkov, which would signal he wants reconciliation with the destroyed clan's survivors and a shift from pure domination to actual unity.
+**Courtship vs. Recognition:** While bond recognition is instinctive, dragon society recognizes a "consideration" phase—a public signal that an alpha is open to bonding with a particular dragon, assessing compatibility before the bond might manifest. This courtship period (which can last months or years) allows dragons to spend time together and see if recognition occurs. Most dragons understand the difference between genuine courtship and political theater, but the act of publicly courting someone still carries political weight.
+
+**Political Implications:** Mating bonds carry enormous political weight. An Alpha's choice of mate signals alliances and priorities. Darius asking Sera to pose as someone he's publicly courting is politically explosive—it suggests he's open to bonding with a Volkov survivor, which signals reconciliation with the destroyed clan and a shift from pure domination to actual unity. The risk: other dragons may suspect it's theater rather than genuine courtship, which would undermine his credibility.
 
 **The Complication for Sera & Darius:** Neither believes in fate or mystical bonds—until they start feeling the pull. The story question becomes whether what they're feeling is a genuine mating bond or just inconvenient attraction in forced proximity. Darius has never felt the bond before and isn't sure what to look for. Sera refuses to consider it because bonding with her family's murderer would be the ultimate betrayal.
 
@@ -146,7 +150,7 @@ This is where dragon biology becomes mystical and non-negotiable.
 
 **Magic Casting:** Dragons aren't wizards. They have inherent elemental affinities and supernatural resilience, but they can't cast spells or learn magic the way witches do. Their power is instinctive, not studied.
 
-**The Veil:** Individual dragons can't manipulate the Veil. That's old magic maintained by the eldest dragons collectively (the Ancients, who've mostly withdrawn from clan politics). Breaking the Veil has consequences that even clan alphas fear.
+**The Veil:** Individual dragons can't manipulate the Veil's foundational structure. That's old magic maintained by the eldest dragons collectively (the Ancients, who've mostly withdrawn from clan politics but still maintain this critical working). However, each clan has elder specialists who can perform localized memory alterations and perception adjustments through collective ritual when breaches occur—it's difficult, expensive in terms of magical energy, and requires multiple dragons working together. This is why Veil breaches are treated so seriously and why shifting in populated areas is avoided whenever possible. Breaking the Veil has consequences that even clan alphas fear.
 
 **Compulsion:** Dragons can't mind-control each other or humans. Their power is physical and elemental, not mental.
 
@@ -180,7 +184,7 @@ Beyond dragon affinities, there's older magic in the world—remnants from when 
 
 **The Veil:** The greatest magical working in dragon history—a collective spell woven by the eldest dragons centuries ago to hide supernatural beings from human awareness. It's maintained by belief, secrecy, and the will of the Ancients. Threatening the Veil is the fastest way to unite all clans against you.
 
-**Blood Magic:** Forbidden but known. Using dragon blood in rituals can achieve powerful effects—bindings, curses, tracking. It requires sacrifice and leaves traces. Someone who massacres an entire clan would leave enormous blood magic signatures... if you knew how to look for them.
+**Blood Magic:** Forbidden but known. Using dragon blood in rituals can achieve powerful effects—bindings, curses, tracking. It requires sacrifice and leaves traces. Someone who massacres an entire clan would leave enormous blood magic signatures... if you knew how to look for them and were willing to risk approaching the site. The Volkov ruins' blood magic residue is not just evidence—it's actively dangerous, creating magical distortions that make investigation risky. Additionally, most dragons lack the specialized knowledge to interpret blood magic traces, and those who possess such knowledge are rare and rarely willing to get involved in clan politics. The combination of physical danger, specialized skill requirements, and political sensitivity has kept the massacre site uninvestigated for three years.
 
 **Prophecies & Portents:** The eldest dragons sometimes experience visions. These are vague, symbolic, unreliable—but also eerily accurate in retrospect. Nobody knows if they're seeing the future or just possibilities. Dragon society dismisses prophecy publicly while quietly scrambling to interpret it.
 
@@ -216,7 +220,7 @@ The conspiracy driving the plot involves someone using old magic—possibly bloo
 
 ### The Sanctuary: Neutral Ground
 
-**What It Is:** An underground supernatural club/market existing in a pocket of neutral territory recognized by all clans. Managed by a ancient dragon who withdrew from clan politics centuries ago and enforces neutrality with ruthless efficiency.
+**What It Is:** An underground supernatural club/market existing in a pocket of neutral territory recognized by all clans. Managed by an ancient dragon (known only as the Keeper) who withdrew from clan politics centuries ago and enforces neutrality through a combination of personal power and collective clan agreement. The Keeper is old enough and powerful enough to be a genuine threat even to clan alphas, and more importantly, all clans have agreed that violence in the Sanctuary brings collective retaliation from every other clan. This dual enforcement—the Keeper's personal power plus the political cost of violation—makes the neutrality hold.
 
 **Aesthetic:** Decadent and dangerous. Imagine a speakeasy mixed with a supernatural bazaar. Low lighting, live music, private rooms for deals, open markets where anything can be bought if you have the currency (not just money—favors, secrets, blood, years of service).
 
@@ -228,7 +232,7 @@ The conspiracy driving the plot involves someone using old magic—possibly bloo
 
 ### The Volkov Ruins: Site of the Massacre
 
-**What It Is:** The destroyed stronghold of the Volkov Clan, located in a territory that's now contested/abandoned. The ruins are avoided by all clans—partly out of respect for the dead, partly out of superstition, mostly because blood magic residue makes the place dangerous.
+**What It Is:** The destroyed stronghold of the Volkov Clan, located in territory that remains unclaimed and avoided by all clans. The ruins are abandoned—partly out of respect for the dead, partly out of superstition, mostly because blood magic residue makes the place actively dangerous to approach.
 
 **Aesthetic:** Haunting. A burned-out estate/compound that once rivaled the Kael Tower in power. Nature is reclaiming it, but the scorch marks and structural damage tell the story of violence. There's a wrongness to the place—the air is too still, shadows move incorrectly, the temperature fluctuates.
 
