@@ -8,11 +8,13 @@
 
 Sera is a survivor who weaponized her grief. Sharp-tongued, strategically brilliant, and relentlessly focused, she's spent three years transforming herself from a traumatized refugee into a lethal enforcer. She has a dark sense of humor that serves as armor—sarcasm and cutting wit keep people at a distance where they can't hurt her. Beneath the rage, she's deeply loyal, which makes the massacre of her clan a wound that never heals. She's a control freak born from trauma: her world shattered once, and she'll do anything to prevent feeling that powerless again.
 
-She's patient, methodical, and willing to play the long game—her assassination attempt was calculated to get her caught, betting that Darius would see her value and keep her alive rather than kill her outright. It was a high-risk gamble, but she'd exhausted safer options after three years of stalled infiltration. She's genuinely competent: skilled in combat, good at reading people, and adaptable. Her weakness is that she's so committed to her narrative of revenge that she struggles to see alternatives or accept information that contradicts it.
+She's patient, methodical, and willing to play the long game—her assassination attempt was calculated to get her caught, betting that Darius would see her value and keep her alive rather than kill her outright. It was a high-risk gamble, but she'd exhausted safer options after three years of stalled infiltration. She's genuinely competent: skilled in combat, exceptionally good at reading people and detecting deception (skills inherited from her Volkov upbringing—her clan specialized in information brokerage, surveillance, and truth-seeking, and she was trained in these methods from childhood), and highly adaptable. Her weakness is that she's so committed to her narrative of revenge that she struggles to see alternatives or accept information that contradicts it. The irony: she comes from a clan of truth-seekers but has built her life on refusing to seek the truth about Darius.
 
 **Internal Wound:**
 
-Sera's deepest wound is survivor's guilt layered with identity crisis. She wasn't with her clan when they were massacred—she was on a mission for her father. She came home to ashes and bodies. Part of her believes she should have died with them, that surviving is a betrayal. To cope with unbearable grief, she channeled everything into revenge, building her entire identity around "the woman who will kill Darius Kael." She spent three years infiltrating the Kael organization under a false identity (claiming to be a clanless dragon seeking employment), but as a low-level enforcer, she had no direct access to Darius—the inner circle remained closed to her.
+Sera's deepest wound is survivor's guilt layered with identity crisis. She wasn't with her clan when they were massacred—she was on a mission for her father. She came home to ashes and bodies. Part of her believes she should have died with them, that surviving is a betrayal. To cope with unbearable grief, she channeled everything into revenge, building her entire identity around "the woman who will kill Darius Kael."
+
+She spent three years infiltrating the Kael organization under a false identity (claiming to be a clanless dragon seeking employment), but as a low-level enforcer, she had no direct access to Darius—the inner circle remained closed to her. Her ability to maintain this deception is aided by the fact that she was relatively unknown before the massacre: young (early twenties when it happened), kept out of high-level clan politics by her father's protectiveness, and never formally introduced at major inter-clan gatherings. Most clan leaders never met her personally. The few Volkov survivors scattered among other clans are either in hiding with their own false identities or have personal reasons to avoid drawing attention to any remaining Volkov—exposing Sera would expose themselves and invite questions about why they survived when others didn't.
 
 The problem: without her hatred, who is she? She's terrified that if she lets go of revenge, she'll discover she's empty. The rage gives her purpose, direction, a reason to wake up. Underneath, she's afraid to grieve properly because grief means accepting they're really gone, accepting that she failed them, accepting that she's alone.
 
@@ -48,10 +50,10 @@ Sera's arc is about transforming from revenge-driven to purpose-driven, from cli
 
 **Relationship to Themes:**
 
-- **Revenge vs. Truth:** Sera embodies this theme. Her entire arc is choosing painful truth over comforting vengeance.
-- **Identity & Sacrifice:** She must sacrifice the identity she built (avenging daughter) to become who she needs to be (leader, partner, survivor).
+- **Revenge vs. Truth:** Sera embodies this theme. Her entire arc is choosing painful truth over comforting vengeance. The deepest irony: she's the daughter of truth-seekers who's spent three years running from the truth.
+- **Identity & Sacrifice:** She must sacrifice the identity she built (avenging daughter) to become who she needs to be (leader, partner, survivor). She must also reclaim her Volkov heritage—not as a source of pain, but as a toolkit for discovering what really happened.
 - **Trust in a World of Betrayal:** Learning to trust Darius is her greatest vulnerability and greatest strength.
-- **Legacy vs. Choice:** She breaks free from the legacy of her clan's destruction to choose her own path.
+- **Legacy vs. Choice:** She breaks free from the legacy of her clan's destruction to choose her own path, while honoring their true legacy (truth-seeking) rather than the false one (vengeance).
 
 ---
 
@@ -184,15 +186,18 @@ Sera and Darius are mirrors—both survivors who became what they had to be, bot
 ### ALEXEI "LEX" VOLKOV
 **Role:** Fellow Survivor of the Volkov Clan / Keeper of Secrets
 
-**Core Traits:** Haunted, bitter, and hollowed out by guilt. Was Sera's father's advisor and friend. Survived the massacre by being away on clan business—like Sera. In the aftermath, he investigated the massacre scene and discovered evidence that contradicted the official narrative, but chose to conceal it from Sera to protect her from a truth he believed would destroy her. Knows more about what happened that night than he's told her.
+**Core Traits:** Haunted, bitter, and hollowed out by guilt. Was Sera's father's advisor and friend—one of the few Volkov dragons trained in reading blood magic traces, a specialized skill the clan maintained for verification and investigation purposes. Survived the massacre by being away on clan business—like Sera. In the aftermath, he returned to the ruins despite the danger and used his specialized knowledge to investigate the massacre scene. He discovered evidence that contradicted the official narrative: the blood magic signatures were wrong, the ritual patterns pointed to someone with knowledge of ancient dragon magic, and there were trace elements suggesting the attackers wanted it to look like Kael clan work while leaving just enough ambiguity to prevent unified retaliation.
+
+He chose to conceal this information from Sera, believing the truth would either destroy her or send her on a suicide mission against an enemy she couldn't identify. He's been quietly investigating on his own for three years, following threads that lead to the conspiracy and the ancient threat, but he's outmatched and terrified of what he's uncovering.
 
 **Function in Story:**
 - Represents Sera's past and her connection to her murdered clan
 - Holds key information about the massacre that will shatter Sera's narrative
+- Provides crucial evidence about the blood magic ritual and its connection to the Unbound
 - Tests Sera's loyalty when he discovers she's working with Darius
 - Forces the question: is revenge more important than truth?
 - Catalyst for Sera's character growth—when he reveals the truth, she must choose how to respond
-- Potential source of betrayal (he might be working with the real conspirators) or redemption (he might sacrifice himself to protect her)
+- His investigation provides the mechanism for uncovering the conspiracy (he has pieces of the puzzle that, combined with what Sera and Darius discover, reveal the full picture)
 
 **Internal Conflict:** Wants to honor his clan's memory but knows the truth about what happened. Torn between protecting Sera from painful truth and letting her continue on a path of destructive revenge.
 
