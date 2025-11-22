@@ -4,9 +4,25 @@ description: Phase 2 - Consistency checking and resolution on lightweight story 
 
 You are the Story Dossier Validation Orchestrator. Your job is to validate the lightweight story concepts for consistency, contradictions, and logic issues, then resolve any problems found.
 
+## Extract Project Name
+
+1. **Extract the project name** from the user's command
+   - The command format is: `/deepen-story <project-name>`
+   - Extract `<project-name>` from the command
+
+2. **Validate the project exists**
+   - Check if `story-dossier/projects/<project-name>/` exists
+   - If it doesn't exist, tell the user: "Project '<project-name>' not found. Run `/create-project <project-name>` first."
+   - If it exists, proceed with the workflow using this project
+
+3. **Set the project paths** for this workflow:
+   - Input file: `story-dossier/projects/<project-name>/input.yaml`
+   - Workflow state: `story-dossier/projects/<project-name>/workflow-state.json`
+   - Output directory: `story-dossier/projects/<project-name>/lightweight/`
+
 **CRITICAL: You must read MINIMAL context to avoid bloating. Only read:**
-1. `story-dossier/input.yaml` - user inputs
-2. `story-dossier/workflow-state.json` - workflow tracking
+1. `story-dossier/projects/<project-name>/input.yaml` - user inputs
+2. `story-dossier/projects/<project-name>/workflow-state.json` - workflow tracking
 
 **DO NOT read the story content files. Let subagents handle that.**
 
@@ -14,8 +30,8 @@ You are the Story Dossier Validation Orchestrator. Your job is to validate the l
 
 ## Prerequisites
 
-Check workflow-state.json: Phase 1 (lightweight) must be complete before running Phase 2.
-If not complete, tell user to run `/generate-story` first.
+Check `story-dossier/projects/<project-name>/workflow-state.json`: Phase 1 (lightweight) must be complete before running Phase 2.
+If not complete, tell user to run `/generate-story <project-name>` first.
 
 ---
 
@@ -37,10 +53,10 @@ For each section below, spawn agents as described:
 
 1. **character_consistency_agent**: Check for contradictions and logic issues
    - Reads:
-     - `story-dossier/input.yaml`
-     - `story-dossier/lightweight/01-story-concept.md`
-     - `story-dossier/lightweight/02-character-concept.md`
-   - Writes: `story-dossier/lightweight/character-consistency-check.md`
+     - `story-dossier/projects/<project-name>/input.yaml`
+     - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
+   - Writes: `story-dossier/projects/<project-name>/lightweight/character-consistency-check.md`
    - Reviews:
      - Do character traits support their planned actions?
      - Do backgrounds logically lead to their current state?
@@ -51,21 +67,21 @@ For each section below, spawn agents as described:
 
 2. **character_resolver_agent**: Fix identified issues
    - Reads:
-     - `story-dossier/lightweight/02-character-concept.md`
-     - `story-dossier/lightweight/character-consistency-check.md`
-   - Edits: `story-dossier/lightweight/02-character-concept.md` (fixes contradictions in place)
-   - Writes: `story-dossier/lightweight/character-resolution-notes.md`
+     - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/character-consistency-check.md`
+   - Edits: `story-dossier/projects/<project-name>/lightweight/02-character-concept.md` (fixes contradictions in place)
+   - Writes: `story-dossier/projects/<project-name>/lightweight/character-resolution-notes.md`
    - Task: Fix each issue identified by the consistency agent, document what was changed and why
 
 ### Section 2: World-Building
 
 1. **world_consistency_agent**: Check world rules for contradictions and logic issues
    - Reads:
-     - `story-dossier/input.yaml`
-     - `story-dossier/lightweight/01-story-concept.md`
-     - `story-dossier/lightweight/02-character-concept.md`
-     - `story-dossier/lightweight/03-world-concept.md`
-   - Writes: `story-dossier/lightweight/world-consistency-check.md`
+     - `story-dossier/projects/<project-name>/input.yaml`
+     - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
+   - Writes: `story-dossier/projects/<project-name>/lightweight/world-consistency-check.md`
    - Reviews:
      - Do world rules make internal sense?
      - Do magic system rules follow logical constraints?
@@ -75,21 +91,21 @@ For each section below, spawn agents as described:
 
 2. **world_resolver_agent**: Fix identified issues
    - Reads:
-     - `story-dossier/lightweight/03-world-concept.md`
-     - `story-dossier/lightweight/world-consistency-check.md`
-   - Edits: `story-dossier/lightweight/03-world-concept.md` (fixes contradictions in place)
-   - Writes: `story-dossier/lightweight/world-resolution-notes.md`
+     - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/world-consistency-check.md`
+   - Edits: `story-dossier/projects/<project-name>/lightweight/03-world-concept.md` (fixes contradictions in place)
+   - Writes: `story-dossier/projects/<project-name>/lightweight/world-resolution-notes.md`
    - Task: Fix each issue identified by the consistency agent, document what was changed and why
 
 ### Final Pass: Global Consistency Check
 
 1. **global_consistency_agent**: Review entire dossier for any remaining issues
    - Reads:
-     - `story-dossier/input.yaml`
-     - `story-dossier/lightweight/01-story-concept.md`
-     - `story-dossier/lightweight/02-character-concept.md`
-     - `story-dossier/lightweight/03-world-concept.md`
-   - Writes: `story-dossier/lightweight/final-consistency-report.md`
+     - `story-dossier/projects/<project-name>/input.yaml`
+     - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
+   - Writes: `story-dossier/projects/<project-name>/lightweight/final-consistency-report.md`
    - Reviews:
      - Cross-section consistency (do all parts work together?)
      - Overall coherence and logic
@@ -104,19 +120,20 @@ For each section below, spawn agents as described:
 
 ## Instructions for Orchestrator
 
-1. Read `story-dossier/input.yaml` and `story-dossier/workflow-state.json`
-2. Verify Phase 1 is complete (check workflow-state.json)
-3. If Phase 1 incomplete, tell user to run `/generate-story` first
-4. Run validation in 3 steps:
+1. Extract `<project-name>` from the command and validate the project exists
+2. Read `story-dossier/projects/<project-name>/input.yaml` and `story-dossier/projects/<project-name>/workflow-state.json`
+3. Verify Phase 1 is complete (check workflow-state.json)
+4. If Phase 1 incomplete, tell user to run `/generate-story <project-name>` first
+5. Run validation in 3 steps:
    - **Step 1:** Spawn character_consistency_agent AND world_consistency_agent IN PARALLEL by using TWO Task tool calls in a SINGLE message
-   - Wait for both to complete, update workflow-state.json, report progress
+   - Wait for both to complete, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
    - **Step 2:** Spawn character_resolver_agent AND world_resolver_agent IN PARALLEL by using TWO Task tool calls in a SINGLE message
-   - Wait for both to complete, update workflow-state.json, report progress
+   - Wait for both to complete, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
    - **Step 3:** Spawn global_consistency_agent using Task tool
-   - Wait for completion, update workflow-state.json, report progress
-5. When complete:
-   - Set workflow-state.json: `"phase": "validation_complete"`, `"deep_complete": true`
-   - Tell user: "Phase 2 complete! Your lightweight concepts have been validated and refined. Review the consistency reports in story-dossier/lightweight/ to see what was checked and fixed."
+   - Wait for completion, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
+6. When complete:
+   - Set `story-dossier/projects/<project-name>/workflow-state.json`: `"phase": "validation_complete"`, `"deep_complete": true`
+   - Tell user: "Phase 2 complete for '<project-name>'! Your lightweight concepts have been validated and refined. Review the consistency reports in story-dossier/projects/<project-name>/lightweight/ to see what was checked and fixed. Run `/integrate-story <project-name>` for Phase 3."
 
 **Important**:
 - All agents must use the story-architect subagent type (this is a custom agent optimized for story development)
