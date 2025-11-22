@@ -54,18 +54,20 @@ For each section below, spawn TWO agents in sequence:
 
 ### Section 2: World-Building
 
-1. **world_consistency_agent**: Check world rules for contradictions and plot holes
+1. **world_consistency_agent**: Check world rules for contradictions and logic issues
    - Reads:
      - `story-dossier/input.yaml`
-     - ALL `story-dossier/lightweight/*.md` files
+     - `story-dossier/lightweight/01-story-concept.md`
+     - `story-dossier/lightweight/02-character-concept.md`
+     - `story-dossier/lightweight/03-world-concept.md`
      - `story-dossier/lightweight/character-resolution-notes.md` (if available)
    - Writes: `story-dossier/lightweight/world-consistency-check.md`
    - Reviews:
      - Do world rules make internal sense?
-     - Do magic system rules enable the plot without breaking logic?
-     - Do settings support the planned scenes?
+     - Do magic system rules follow logical constraints?
+     - Do settings support the story and characters?
      - Are there any world-building contradictions?
-     - Do world rules conflict with character abilities or plot needs?
+     - Do world rules conflict with character abilities or story needs?
 
 2. **world_resolver_agent**: Fix identified issues
    - Reads:
@@ -75,64 +77,22 @@ For each section below, spawn TWO agents in sequence:
    - Writes: `story-dossier/lightweight/world-resolution-notes.md`
    - Task: Fix each issue identified by the consistency agent, document what was changed and why
 
-### Section 3: Romance Arc
-
-1. **romance_consistency_agent**: Check romance arc for logic issues
-   - Reads:
-     - `story-dossier/input.yaml`
-     - ALL `story-dossier/lightweight/*.md` files
-   - Writes: `story-dossier/lightweight/romance-consistency-check.md`
-   - Reviews:
-     - Does romance pacing feel natural given character personalities?
-     - Do romantic actions align with character motivations and wounds?
-     - Are conflicts between lovers organic (not forced or based on simple miscommunication)?
-     - Does the romance escalate logically?
-     - Do tropes execute properly?
-
-2. **romance_resolver_agent**: Fix issues
-   - Reads:
-     - `story-dossier/lightweight/04-romance-arc.md`
-     - `story-dossier/lightweight/romance-consistency-check.md`
-   - Edits: `story-dossier/lightweight/04-romance-arc.md` (fixes contradictions in place)
-   - Writes: `story-dossier/lightweight/romance-resolution-notes.md`
-   - Task: Fix each issue identified by the consistency agent, document what was changed and why
-
-### Section 4: Plot Structure
-
-1. **plot_consistency_agent**: Check for plot holes and pacing issues
-   - Reads:
-     - `story-dossier/input.yaml`
-     - ALL `story-dossier/lightweight/*.md` files
-   - Writes: `story-dossier/lightweight/plot-consistency-check.md`
-   - Reviews:
-     - Are there any plot holes?
-     - Does pacing work across all acts?
-     - Do subplots resolve satisfyingly?
-     - Does plot contradict world rules, character abilities, or romance progression?
-     - Are stakes clear and escalating?
-     - Do characters have agency in driving plot forward?
-
-2. **plot_resolver_agent**: Fix issues
-   - Reads:
-     - `story-dossier/lightweight/05-plot-structure.md`
-     - `story-dossier/lightweight/plot-consistency-check.md`
-   - Edits: `story-dossier/lightweight/05-plot-structure.md` (fixes contradictions in place)
-   - Writes: `story-dossier/lightweight/plot-resolution-notes.md`
-   - Task: Fix each issue identified by the consistency agent, document what was changed and why
-
 ### Final Pass: Global Consistency Check
 
 1. **global_consistency_agent**: Review entire dossier for any remaining issues
    - Reads:
      - `story-dossier/input.yaml`
-     - ALL `story-dossier/lightweight/*.md` files
+     - `story-dossier/lightweight/01-story-concept.md`
+     - `story-dossier/lightweight/02-character-concept.md`
+     - `story-dossier/lightweight/03-world-concept.md`
    - Writes: `story-dossier/lightweight/final-consistency-report.md`
    - Reviews:
      - Cross-section consistency (do all parts work together?)
      - Overall coherence and logic
-     - Are tropes from input.yaml properly executed?
-     - Does everything serve the core premise?
-     - Any remaining contradictions or plot holes?
+     - Do characters fit naturally in this world?
+     - Does the world support the story premise?
+     - Does everything serve the core themes?
+     - Any remaining contradictions or logic issues?
    - If critical issues found, report to user for manual review
    - If minor issues, document them for author awareness
 
@@ -143,7 +103,7 @@ For each section below, spawn TWO agents in sequence:
 1. Read `story-dossier/input.yaml` and `story-dossier/workflow-state.json`
 2. Verify Phase 1 is complete (check workflow-state.json)
 3. If Phase 1 incomplete, tell user to run `/generate-story` first
-4. For each section (Characters, World, Romance, Plot):
+4. For each section (Characters, World):
    - **Spawn consistency agent using subagent_type="story-architect"**
    - Wait for completion, report progress to user
    - **Spawn resolver agent using subagent_type="story-architect"**

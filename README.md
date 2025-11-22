@@ -1,16 +1,16 @@
 # Story Dossier Generator
 
-An automated AI-assisted workflow for fantasy romance authors to generate comprehensive story dossiers using Claude Code's agent orchestration.
+An automated AI-assisted workflow for authors to generate comprehensive story foundations using Claude Code's agent orchestration.
 
 ## What This Does
 
-This system helps you go from **tropes + genre + research** → **complete story dossier** in three phases:
+This system helps you go from **genre + themes + research** → **complete story dossier** in three phases:
 
-1. **Phase 1 (Generation)**: Fast generation of core concepts - premise, characters, world, romance arc, plot structure
-2. **Phase 2 (Validation)**: Consistency checking and resolution to fix contradictions and plot holes
+1. **Phase 1 (Generation)**: Fast generation of core concepts - premise, characters, and world
+2. **Phase 2 (Validation)**: Consistency checking and resolution to fix contradictions and logic issues
 3. **Phase 3 (Integration)**: Sharpen each section using specifics from all others for maximum cohesion
 
-The result: A concise, internally consistent, deeply integrated story dossier ready for outline generation.
+The result: A concise, internally consistent, deeply integrated story foundation ready for development.
 
 ## Directory Structure
 
@@ -22,23 +22,15 @@ story-dossier/
 │   └── epic-fantasy-romance.md
 └── lightweight/                        # All phases work here
     ├── 01-story-concept.md             # Phase 1: Core story premise
-    ├── 02-character-concept.md         # Phase 1: Character basics
+    ├── 02-character-concept.md         # Phase 1: Character concepts
     ├── 03-world-concept.md             # Phase 1: World rules
-    ├── 04-romance-arc.md               # Phase 1: Romance progression
-    ├── 05-plot-structure.md            # Phase 1: Plot structure
     ├── character-consistency-check.md  # Phase 2: Validation
     ├── character-resolution-notes.md   # Phase 2: Fixes
     ├── world-consistency-check.md      # Phase 2: Validation
     ├── world-resolution-notes.md       # Phase 2: Fixes
-    ├── romance-consistency-check.md    # Phase 2: Validation
-    ├── romance-resolution-notes.md     # Phase 2: Fixes
-    ├── plot-consistency-check.md       # Phase 2: Validation
-    ├── plot-resolution-notes.md        # Phase 2: Fixes
     ├── final-consistency-report.md     # Phase 2: Overall validation
     ├── character-integration-notes.md  # Phase 3: Enhancement
     ├── world-integration-notes.md      # Phase 3: Enhancement
-    ├── romance-integration-notes.md    # Phase 3: Enhancement
-    ├── plot-integration-notes.md       # Phase 3: Enhancement
     └── cohesion-report.md              # Phase 3: Final assessment
 ```
 
@@ -55,9 +47,8 @@ Unlike traditional story development tools that create massive detailed document
 ### Step 1: Fill Out Your Inputs
 
 Edit `story-dossier/input.yaml` with:
-- Romance tropes you want to explore
 - Genre/subgenre
-- Chapter count
+- Core themes
 - Your genre research, comp titles, notes
 - Any must-include or avoid elements
 
@@ -68,16 +59,14 @@ In Claude Code, run:
 /generate-story
 ```
 
-This spawns 5 specialized agents that will:
+This spawns 3 specialized agents that will:
 1. Generate your story premise and themes
-2. Create basic character concepts
-3. Design world rules that enable your tropes
-4. Map out the romance arc
-5. Structure the plot into 4 acts
+2. Create character concepts with arcs and motivations
+3. Design world rules that enable your story
 
-**Output**: Files in `lightweight/` directory
+**Output**: 3 core files in `lightweight/` directory
 
-**Time**: ~5-10 minutes (agents run sequentially)
+**Time**: ~3-5 minutes (agents run sequentially)
 
 ### Step 3: Review and Validate
 
@@ -85,7 +74,6 @@ Open the files in `lightweight/` and review:
 - Does the premise excite you?
 - Do the characters feel right?
 - Does the world make sense?
-- Does the romance arc follow your tropes?
 
 **Make any edits you want** directly in these files. They become the foundation for Phase 2.
 
@@ -96,9 +84,9 @@ When you're happy with the lightweight concepts, run:
 /deepen-story
 ```
 
-This spawns 9 specialized agents (2 per section + 1 final check) that will:
+This spawns 5 specialized agents (2 per section + 1 final check) that will:
 
-**For each section (Characters, World, Romance, Plot):**
+**For each section (Characters, World):**
 1. **Consistency Agent**: Checks for contradictions and logic issues
 2. **Resolver Agent**: Fixes identified problems in place
 
@@ -106,7 +94,7 @@ This spawns 9 specialized agents (2 per section + 1 final check) that will:
 
 **Output**: Validation reports and resolution notes in `lightweight/` directory. The core concept files are edited to fix any issues.
 
-**Time**: ~10-15 minutes (agents run sequentially)
+**Time**: ~5-7 minutes (agents run sequentially)
 
 ### Step 5: Review Phase 2 Outputs
 
@@ -124,26 +112,24 @@ When you're satisfied with the validated sections, run:
 /integrate-story
 ```
 
-This spawns 5 specialized agents that will:
+This spawns 3 specialized agents that will:
 
-**Integration Refinement (one agent per section):**
-1. **Character Integration**: Sharpen characters using specifics from world/romance/plot
-2. **World Integration**: Adjust world to amplify character conflicts and romance situations
-3. **Romance Integration**: Heighten chemistry using character wounds and world constraints
-4. **Plot Integration**: Make plot showcase character growth and leverage world mechanics
-5. **Cohesion Check**: Verify integration enhanced cohesion without breaking consistency
+**Integration Refinement:**
+1. **Character Integration**: Sharpen characters using specifics from story and world
+2. **World Integration**: Adjust world to amplify character conflicts and story themes
+3. **Cohesion Check**: Verify integration enhanced cohesion without breaking consistency
 
 **The Goal:** Make sections **amplify** each other, not just coexist.
 
 **Examples of integration:**
-- Character trait creates friction with specific world rule
-- World magic system forces exact romance trope situations
-- Romance beats align perfectly with plot turning points
-- Plot obstacles arise from character flaws + world constraints
+- Character traits create friction with specific world rules
+- World magic system creates natural obstacles for these specific characters
+- Story themes are reflected in both character arcs and world details
+- World culture shapes character voice and motivations
 
-**Output**: Core concept files edited in place with `*-integration-notes.md` files showing enhancements
+**Output**: Core concept files edited in place with integration notes showing enhancements
 
-**Time**: ~10-15 minutes (agents run sequentially)
+**Time**: ~3-5 minutes (agents run sequentially)
 
 ### Step 7: Final Review
 
@@ -152,7 +138,7 @@ Review the integration results in `lightweight/`:
 - `cohesion-report.md` shows overall assessment with cohesion score
 - The complete dossier should feel like an integrated whole, not separate pieces
 
-The story dossier is now ready for outline generation!
+The story foundation is now ready for further development!
 
 ## Architecture: Why It's Built This Way
 
@@ -170,9 +156,9 @@ All subagents use the **story-architect** agent (`.claude/agents/story-architect
 - Focused on story planning, not code
 - Trained to avoid generic "LLM soup" outputs
 - Emphasizes logical consistency and unique details
-- Understands fantasy romance genre conventions
+- Understands genre conventions and expectations
 - Actively avoids clichés and overused tropes
-- Thinks in terms of character motivation, world logic, and emotional resonance
+- Thinks in terms of character motivation, world logic, and thematic resonance
 
 **What makes it different from code agents?**
 - No code-focused thinking or terminology
@@ -201,10 +187,9 @@ Agents run one at a time to:
 
 ### Default Settings
 Configured for:
-- Fantasy romance genre
-- 70k-90k words
-- 24-28 chapters
-- 4-act structure (Act 1, 2A, 2B, 3)
+- Story concept, character, and world development
+- Genre-agnostic foundation building
+- Flexible structure to support any genre
 
 ### To Modify
 Edit the orchestrator commands in `.claude/commands/`:
