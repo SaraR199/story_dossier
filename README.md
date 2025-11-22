@@ -51,6 +51,7 @@ Edit `story-dossier/input.yaml` with:
 - Core themes
 - Your genre research, comp titles, notes
 - Any must-include or avoid elements
+- (Optional) Specify a blueprint file for structural guidance
 
 ### Step 2: Run Phase 1 (Lightweight Generation)
 
@@ -60,9 +61,11 @@ In Claude Code, run:
 ```
 
 This spawns 3 specialized agents that will:
-1. Generate your story premise and themes
-2. Create character concepts with arcs and motivations (runs in parallel with world)
-3. Design world rules that enable your story (runs in parallel with character)
+1. Generate your story premise and themes (using blueprint's project_essentials template if provided)
+2. Create character concepts with arcs and motivations (using blueprint's character_roster template, runs in parallel with world)
+3. Design world rules that enable your story (using blueprint's world_building template, runs in parallel with character)
+
+If you specified a blueprint in input.yaml, agents will use it as a structural template to organize their outputs.
 
 **Output**: 3 core files in `lightweight/` directory
 
@@ -190,6 +193,15 @@ Configured for:
 - Story concept, character, and world development
 - Genre-agnostic foundation building
 - Flexible structure to support any genre
+- Optional blueprint templates for consistent output structure
+
+### Using Blueprints
+Blueprints provide structural templates for organizing story outputs:
+- Located in `story-dossier/blueprints/`
+- Specify blueprint in `input.yaml` (optional)
+- Agents use blueprint sections as organizational templates
+- Default blueprint: `epic-fantasy-romance.md` (customizable for any genre)
+- Create custom blueprints by copying and modifying existing ones
 
 ### To Modify
 Edit the orchestrator commands in `.claude/commands/`:
