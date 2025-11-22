@@ -8,11 +8,11 @@
 
 Sera is a survivor who weaponized her grief. Sharp-tongued, strategically brilliant, and relentlessly focused, she's spent three years transforming herself from a traumatized refugee into a lethal enforcer. She has a dark sense of humor that serves as armor—sarcasm and cutting wit keep people at a distance where they can't hurt her. Beneath the rage, she's deeply loyal, which makes the massacre of her clan a wound that never heals. She's a control freak born from trauma: her world shattered once, and she'll do anything to prevent feeling that powerless again.
 
-She's not reckless despite the revenge obsession—she's patient, methodical, and willing to play the long game. She's also genuinely competent: skilled in combat, good at reading people, and adaptable. Her weakness is that she's so committed to her narrative of revenge that she struggles to see alternatives or accept information that contradicts it.
+She's patient, methodical, and willing to play the long game—her assassination attempt was calculated to get her caught, betting that Darius would see her value and keep her alive rather than kill her outright. It was a high-risk gamble, but she'd exhausted safer options after three years of stalled infiltration. She's genuinely competent: skilled in combat, good at reading people, and adaptable. Her weakness is that she's so committed to her narrative of revenge that she struggles to see alternatives or accept information that contradicts it.
 
 **Internal Wound:**
 
-Sera's deepest wound is survivor's guilt layered with identity crisis. She wasn't with her clan when they were massacred—she was on a mission for her father. She came home to ashes and bodies. Part of her believes she should have died with them, that surviving is a betrayal. To cope with unbearable grief, she channeled everything into revenge, building her entire identity around "the woman who will kill Darius Kael."
+Sera's deepest wound is survivor's guilt layered with identity crisis. She wasn't with her clan when they were massacred—she was on a mission for her father. She came home to ashes and bodies. Part of her believes she should have died with them, that surviving is a betrayal. To cope with unbearable grief, she channeled everything into revenge, building her entire identity around "the woman who will kill Darius Kael." She spent three years infiltrating the Kael organization under a false identity (claiming to be a clanless dragon seeking employment), but as a low-level enforcer, she had no direct access to Darius—the inner circle remained closed to her.
 
 The problem: without her hatred, who is she? She's terrified that if she lets go of revenge, she'll discover she's empty. The rage gives her purpose, direction, a reason to wake up. Underneath, she's afraid to grieve properly because grief means accepting they're really gone, accepting that she failed them, accepting that she's alone.
 
@@ -34,13 +34,13 @@ Sera's arc is about transforming from revenge-driven to purpose-driven, from cli
 
 **Romance Arc:**
 
-- **Initial Dynamic:** Pure hatred. Sera sees Darius as the monster who destroyed everything she loved. Every interaction is a battle of wills. She fantasizes about killing him in elaborate ways.
+- **Initial Dynamic:** Pure hatred. Sera sees Darius as the monster who destroyed everything she loved. Every interaction is a battle of wills. She tells herself she'll kill him the moment the arrangement ends, using the forced proximity to study his weaknesses.
 
-- **Forced Proximity (Act 1):** Posing as his potential mate requires physical closeness she despises. But she can't deny his competence, his strategic mind, or the moments when his ruthless mask slips and she glimpses the exhausted man beneath. Unwilling attraction manifests as hostile banter and charged arguments.
+- **Forced Proximity (Act 1):** Posing as his potential mate requires physical closeness she despises. But she can't deny his competence, his strategic mind, or the moments when his ruthless mask slips and she glimpses the exhausted man beneath. Unwilling attraction manifests as hostile banter and charged arguments. Still committed to eventual murder, but finding it harder to see him as a simple monster.
 
-- **Shifting Ground (Early Act 2):** Starts seeing him as a person with his own trauma and impossible choices. Respect grows despite herself. The moments when he's unexpectedly gentle or honest catch her off guard. She begins to question whether the monster is real or a role he plays.
+- **Shifting Ground (Early Act 2):** Starts seeing him as a person with his own trauma and impossible choices. Respect grows despite herself. The moments when he's unexpectedly gentle or honest catch her off guard. She begins to question whether the monster is real or a role he plays. The murder plan becomes something she clings to out of habit rather than conviction—a familiar identity she's afraid to abandon.
 
-- **Connection (Mid Act 2):** Shared danger and vulnerability create genuine intimacy. She realizes they understand each other in ways no one else can—both survivors, both shaped by violence, both lonely at the core. The attraction becomes undeniable. Guilt wars with desire.
+- **Connection (Mid Act 2):** Shared danger and vulnerability create genuine intimacy. She realizes they understand each other in ways no one else can—both survivors, both shaped by violence, both lonely at the core. The attraction becomes undeniable. She can no longer pretend she wants him dead—the shift from "planning to kill him" to "wanting him alive" happens here, terrifying her because it means everything she's built her identity on is crumbling. Guilt wars with desire.
 
 - **Crisis (Act 3):** Truth about the massacre forces her to confront that her entire revenge quest was built on lies. Loving Darius means betraying her family's memory—or does it? She must choose: cling to comfortable hatred or risk devastating vulnerability.
 
@@ -93,9 +93,9 @@ Darius's arc is about learning that strength and vulnerability aren't mutually e
 
 **Romance Arc:**
 
-- **Initial Dynamic:** Views Sera as a useful tool—her skills are valuable, her loyalty questionable. Respects her competence even as he recognizes she's a threat. Finds her attempted assassination oddly… impressive.
+- **Initial Dynamic:** Views Sera as a useful tool—her skills are valuable, her loyalty questionable. Respects her competence even as he recognizes she's a threat. Finds her attempted assassination oddly… impressive. Recognizes an opportunity: if he can turn an enemy into an ally publicly, it demonstrates that unity is possible—and her skills as an enforcer make her genuinely valuable.
 
-- **Strategic Interest (Act 1):** The fake mate arrangement is purely political, but her fire intrigues him. She's the first person in years who doesn't cower or grovel. Her hatred is honest in a way that appeals to him. He enjoys their verbal sparring because it's real.
+- **Strategic Interest (Act 1):** The fake mate arrangement is purely political—he presents her as a "clanless dragon" he's chosen to elevate, concealing her Volkov identity to avoid the appearance of dominating a conquered clan. To the other clans, she appears to be proof he rewards merit over bloodline. But her fire intrigues him beyond strategy. She's the first person in years who doesn't cower or grovel. Her hatred is honest in a way that appeals to him. He enjoys their verbal sparring because it's real.
 
 - **Unwilling Attraction (Early Act 2):** Starts noticing details—the way she moves, her sharp mind, the vulnerability she hides behind sarcasm. Wants her physically but tells himself it's just chemistry. Begins to care about her opinion of him, which is dangerous.
 
@@ -152,7 +152,7 @@ Sera and Darius are mirrors—both survivors who became what they had to be, bot
 **Function in Story:**
 - Represents doubt about Sera—sees through the fake mate ruse, warns Darius she'll betray him
 - Voice of pragmatism and clan loyalty when Darius starts making decisions based on trust
-- Protective of Darius in a way that sometimes undermines him (treating him like he needs protection shows he still sees the young man, not just the leader)
+- Protective of Darius in private moments—a rare person allowed to speak candidly behind closed doors. In public he's the perfect enforcer, but in private he still sees the young man beneath the leader, which sometimes frustrates Darius even as it grounds him
 - Eventually becomes an ally when Sera proves herself through action
 - Provides opportunities for Sera to demonstrate loyalty and for Darius to choose trust over caution
 
@@ -182,9 +182,9 @@ Sera and Darius are mirrors—both survivors who became what they had to be, bot
 ---
 
 ### ALEXEI "LEX" VOLKOV
-**Role:** Sole Other Survivor of the Volkov Clan / Keeper of Secrets
+**Role:** Fellow Survivor of the Volkov Clan / Keeper of Secrets
 
-**Core Traits:** Haunted, bitter, and hollowed out by guilt. Was Sera's father's advisor and friend. Survived the massacre by being away on clan business—like Sera. Knows more about what happened that night than he's told her.
+**Core Traits:** Haunted, bitter, and hollowed out by guilt. Was Sera's father's advisor and friend. Survived the massacre by being away on clan business—like Sera. In the aftermath, he investigated the massacre scene and discovered evidence that contradicted the official narrative, but chose to conceal it from Sera to protect her from a truth he believed would destroy her. Knows more about what happened that night than he's told her.
 
 **Function in Story:**
 - Represents Sera's past and her connection to her murdered clan
