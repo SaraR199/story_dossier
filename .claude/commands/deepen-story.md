@@ -44,6 +44,7 @@ Phase 2 validates the lightweight concepts for internal consistency without addi
 - **Step 1:** Run both consistency checks IN PARALLEL
 - **Step 2:** Run both resolver agents IN PARALLEL
 - **Step 3:** Run global consistency check
+- **Step 4:** Run global resolver to fix cross-section issues
 
 ---
 
@@ -97,7 +98,7 @@ For each section below, spawn agents as described:
    - Writes: `story-dossier/projects/<project-name>/lightweight/world-resolution-notes.md`
    - Task: Fix each issue identified by the consistency agent, document what was changed and why
 
-### Final Pass: Global Consistency Check
+### Step 3: Global Consistency Check
 
 1. **global_consistency_agent**: Review entire dossier for any remaining issues
    - Reads:
@@ -113,8 +114,24 @@ For each section below, spawn agents as described:
      - Does the world support the story premise?
      - Does everything serve the core themes?
      - Any remaining contradictions or logic issues?
-   - If critical issues found, report to user for manual review
-   - If minor issues, document them for author awareness
+   - Output: Document all cross-section issues found with specific references
+
+### Step 4: Global Resolution
+
+1. **global_resolver_agent**: Fix cross-section issues identified by global consistency check
+   - Reads:
+     - `story-dossier/projects/<project-name>/lightweight/final-consistency-report.md`
+     - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
+     - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
+   - Edits: Any of the core concept files (01, 02, 03) that need fixes for cross-section issues
+   - Writes: `story-dossier/projects/<project-name>/lightweight/global-resolution-notes.md`
+   - Task: Fix each cross-section issue identified by the global consistency agent:
+     - Resolve character-world mismatches
+     - Fix story-world contradictions
+     - Align all sections with core themes
+     - Eliminate remaining logic contradictions between sections
+   - Document what was changed in which files and why
 
 ---
 
@@ -124,16 +141,18 @@ For each section below, spawn agents as described:
 2. Read `story-dossier/projects/<project-name>/input.yaml` and `story-dossier/projects/<project-name>/workflow-state.json`
 3. Verify Phase 1 is complete (check workflow-state.json)
 4. If Phase 1 incomplete, tell user to run `/generate-story <project-name>` first
-5. Run validation in 3 steps:
+5. Run validation in 4 steps:
    - **Step 1:** Spawn character_consistency_agent AND world_consistency_agent IN PARALLEL by using TWO Task tool calls in a SINGLE message
    - Wait for both to complete, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
    - **Step 2:** Spawn character_resolver_agent AND world_resolver_agent IN PARALLEL by using TWO Task tool calls in a SINGLE message
    - Wait for both to complete, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
    - **Step 3:** Spawn global_consistency_agent using Task tool
    - Wait for completion, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
+   - **Step 4:** Spawn global_resolver_agent using Task tool
+   - Wait for completion, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
 6. When complete:
    - Set `story-dossier/projects/<project-name>/workflow-state.json`: `"phase": "validation_complete"`, `"deep_complete": true`
-   - Tell user: "Phase 2 complete for '<project-name>'! Your lightweight concepts have been validated and refined. Review the consistency reports in story-dossier/projects/<project-name>/lightweight/ to see what was checked and fixed. Run `/integrate-story <project-name>` for Phase 3."
+   - Tell user: "Phase 2 complete for '<project-name>'! Your lightweight concepts have been validated and all issues resolved. Review the consistency reports and resolution notes in story-dossier/projects/<project-name>/lightweight/ to see what was checked and fixed. Run `/integrate-story <project-name>` for Phase 3."
 
 **Important**:
 - All agents must use the story-architect subagent type (this is a custom agent optimized for story development)
