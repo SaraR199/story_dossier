@@ -19,8 +19,12 @@ blueprint: "urban-fantasy-romance"
 
 # Romance Tropes (list all that apply)
 tropes:
-  - "enemies to lovers"
-  - "Forbidden love"
+- Grumpy/Traumatized Love Interest + Optimistic Protagonist (personality contrast creates both tension and healing)​
+- Secrets & Mistaken Identity (character concealing dangerous truth that threatens the relationship when revealed)​
+- Forced Proximity (vulnerability intensifies when characters can't hide)​
+- Found Family/Chosen Family (healing through community bonds alongside romantic connection)​
+- Redemption Arc (character with questionable past earning trust and love through genuine change)​
+
 
 # Additional Story Elements
 magic_system_preference: "soft magic"
