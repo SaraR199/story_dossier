@@ -4,13 +4,13 @@
 # Basic Story Setup
 title: "Untitled Fantasy Romance"
 genre: "fantasy romance"
-subgenre: "epic fantasy romance"  # e.g., epic, urban, cozy, dark, etc.
-heat_level: "steamy"  # sweet, steamy, explicit
-target_audience: "adult"  # YA, NA, adult
+subgenre: "urban fantasy romance"
+heat_level: "explicit" 
+target_audience: "adult" 
 
 # Structure
-chapter_count: 26
-target_word_count: 80000
+chapter_count: 24
+target_word_count: 60000
 
 # Blueprint Selection
 # Choose which blueprint structure to use for the deep phase
@@ -24,29 +24,83 @@ tropes:
   - ""  # add more as needed
 
 # Additional Story Elements
-magic_system_preference: ""  # e.g., "hard magic", "soft magic", "elemental", "none"
-setting_preference: ""  # e.g., "medieval-inspired", "contemporary with magic", "alternate world"
-tone: ""  # e.g., "dark and brooding", "light and hopeful", "witty and fun"
+magic_system_preference: "soft magic"
+setting_preference: "alternate world"
+tone: "intense, steamy, sexy, fun"
 
 # Genre Research & Inspiration
 # Paste your research, comp title notes, trope analysis, anything that informs this story
 research: |
-  Comp titles:
-  -
+  ### Genre Research Report: Mafia-Style Dragon Shifter Series
 
-  Trope notes:
-  -
+***
 
-  Market research:
-  -
+### Overview  
+Mafia-style dragon shifter romance is a highly engaging subgenre within dark paranormal romance and romantasy, combining intense romance with supernatural political intrigue, power struggles, and richly layered worldbuilding. It appeals especially to adult audiences seeking dark, spicy, and emotionally complex stories grounded in fantastical yet mafia-like underworld settings. 
 
-  Inspiration:
-  -
+***
 
-# Optional: Any specific elements you want included
-must_include:
-  - ""  # e.g., "dragon bond", "political intrigue", "heist sequence"
+### Character Archetypes
 
-# Optional: Any elements to avoid
-avoid:
-  - ""  # e.g., "love triangles", "miscommunication as main conflict"
+- **Alpha Dragon Leader / Clan Boss:** Ruthless, possessive, powerful with a strong sense of loyalty and protection over clan and mate.
+- **Fated Mate / Mate with a Secret:** The destined partner, often harboring secrets or a mysterious past, bringing emotional depth and tension.
+- **Loyal Right-Hand / Enforcer:** Fierce warrior or protector—often a secondary lead or rival who may evolve into a romantic interest.
+- **Rebellious Outsider:** A character who challenges clan rules or traditions, causing internal conflict and stirring change.
+- **Clan Council or Elders:** Wise, sometimes manipulative figures representing established power, adding political intrigue.
+- **Rival Clan Leader:** Main antagonist or dark foil, fueling tension with power struggles and territory wars.
+
+***
+
+### Popular Tropes
+
+- **Fated Mates:** Unbreakable bonds pulling couples together despite obstacles.
+- **Enemies-to-Lovers:** Conflicting loyalties lead to passionate romance.
+- **Forced Proximity:** Characters forced to cooperate or stay close during crises, sparking attraction.
+- **Slow Burn:** Gradual build-up of trust and passion, often with layered emotional complexity.
+- **Found Family / Pack Loyalty:** Deep bonds within clan/family units beyond romance.
+- **Mystery & Secrets:** Hidden agendas, family secrets, or forbidden knowledge shaping plot twists.
+- **High-Stakes Protection:** Protagonists protecting loved ones from external threats or clan rivals.
+
+***
+
+### Themes
+
+- **Power & Loyalty:** Exploration of authority, control, and trust within tight-knit clans.
+- **Identity & Sacrifice:** Characters grappling with personal desires versus clan expectations.
+- **Redemption & Revenge:** Overcoming past mistakes or seeking justice within a brutal underworld.
+- **Survival & Legacy:** Clans fighting for survival and dominance across generations.
+- **Romantic Destiny vs Free Will:** The tension between fate and choice in love and life.
+
+***
+
+### Conflict Types
+
+- **Clan Rivalries & Territory Wars:** Violence, political games, assassinations, and sabotage between dragon clans.
+- **Internal Betrayal & Power Struggles:** Shifts in leadership, betrayal by trusted allies, and council manipulations.
+- **Forbidden Romance:** Taboo relationships crossing clan lines or social statuses.
+- **Supernatural Threats:** Curses, awakening ancient powers, or external supernatural enemies impacting clans.
+- **Personal Trauma & Redemption:** Characters facing and overcoming dark pasts or emotional scars.
+
+***
+
+### Worldbuilding Elements
+
+- **Dragon Clans & Hierarchies:** Structured with alpha leaders, council elders, warriors, and mates. Distinct clans have unique cultural traits or elemental affinities.
+- **Mafia-like Underworld:** Secretive, brutal governance with codes of honor alongside ruthless crime dynamics — smuggling, protection rackets, and underground dealings.
+- **Hidden Society:** The supernatural world coexists alongside the human world, often hidden but powerful.
+- **Mystical Territories & Strongholds:** Settings range from fortified mountain lairs and dragon roosts to urban supernatural districts.
+- **Ancient Lore & Magic:** Bloodlines tied to elemental powers, ancient dragons, mystical artifacts, or clan-specific magic.
+- **Rituals & Traditions:** Clan rites of passage, mating ceremonies, or mystical bonds reinforce cultural identity.
+
+***
+
+### Additional Useful Elements
+
+- **Multi-POV Storytelling:** Multiple dragon characters’ perspectives interwoven for depth and complexity.
+- **Interconnected Standalones:** Each book follows a new couple within the clan while advancing the overarching saga.
+- **Dark & Spicy Tone:** Mature themes with explicit romance, emotional intensity, and sometimes gritty violence.
+- **Complex Secondary Characters:** Rich cast of allies, rivals, and friends deepening world immersion.
+- **Serialized Mystery:** Ongoing mysteries or prophecies creating suspense across the series.
+- **Modern Mafia Influences:** Organizational structure, codes, and family loyalty from real-world crime dramas adapted to supernatural context.
+
+***
