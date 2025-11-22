@@ -7,7 +7,7 @@ An automated AI-assisted workflow for authors to generate comprehensive story fo
 This system helps you go from **genre + themes + research** → **complete story dossier** in three phases:
 
 1. **Phase 1 (Generation)**: Fast generation of core concepts - premise, characters, and world
-2. **Phase 2 (Validation)**: Consistency checking and resolution to fix contradictions and logic issues
+2. **Phase 2 (Validation)**: Consistency checking and automatic resolution to fix all contradictions and logic issues
 3. **Phase 3 (Integration)**: Sharpen each section using specifics from all others for maximum cohesion
 
 The result: A concise, internally consistent, deeply integrated story foundation ready for development.
@@ -28,7 +28,8 @@ story-dossier/
     ├── character-resolution-notes.md   # Phase 2: Fixes
     ├── world-consistency-check.md      # Phase 2: Validation
     ├── world-resolution-notes.md       # Phase 2: Fixes
-    ├── final-consistency-report.md     # Phase 2: Overall validation
+    ├── final-consistency-report.md     # Phase 2: Global validation
+    ├── global-resolution-notes.md      # Phase 2: Global fixes
     ├── character-integration-notes.md  # Phase 3: Enhancement
     ├── world-integration-notes.md      # Phase 3: Enhancement
     └── cohesion-report.md              # Phase 3: Final assessment
@@ -84,24 +85,26 @@ When you're happy with the lightweight concepts, run:
 /deepen-story
 ```
 
-This spawns 5 specialized agents (2 per section + 1 final check) that will:
+This spawns 6 specialized agents that will:
 
-**Step 1:** Both consistency agents run in parallel
-**Step 2:** Both resolver agents run in parallel
-**Step 3:** Global consistency check
+**Step 1:** Both consistency agents run in parallel (character + world)
+**Step 2:** Both resolver agents run in parallel (character + world)
+**Step 3:** Global consistency check (cross-section validation)
+**Step 4:** Global resolver (fixes cross-section issues)
 
-**Output**: Validation reports and resolution notes in `lightweight/` directory. The core concept files are edited to fix any issues.
+**Output**: Validation reports and resolution notes in `lightweight/` directory. The core concept files are automatically edited to fix all issues.
 
-**Time**: ~3-4 minutes (consistency checks in parallel, resolvers in parallel, then global check)
+**Time**: ~4-5 minutes (consistency checks in parallel, resolvers in parallel, global check, global resolver)
 
 ### Step 5: Review Phase 2 Outputs
 
 Review the validation files in `lightweight/`:
-- `*-consistency-check.md` files show what issues were found
-- `*-resolution-notes.md` files show how they were fixed
-- `final-consistency-report.md` shows overall analysis
+- `*-consistency-check.md` files show what section-specific issues were found
+- `*-resolution-notes.md` files show how section-specific issues were fixed
+- `final-consistency-report.md` shows cross-section issues found
+- `global-resolution-notes.md` shows how cross-section issues were fixed
 
-**Make any edits you want** directly in the core concept files before moving to Phase 3.
+All issues are automatically resolved. **Make any additional edits you want** directly in the core concept files before moving to Phase 3.
 
 ### Step 6: Run Phase 3 (Integration Enhancement)
 
