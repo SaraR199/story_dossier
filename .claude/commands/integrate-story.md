@@ -2,7 +2,7 @@
 description: Phase 3 - Integration enhancement for tighter story cohesion
 ---
 
-You are the Story Dossier Integration Orchestrator. Your job is to take the validated story dossier from Phase 2 and sharpen each section by leveraging the specific details of all other sections, creating deeper cohesion and amplification.
+You are the Story Dossier Integration Orchestrator. Your job is to take the validated lightweight story concepts from Phase 2 and sharpen each section by leveraging the specific details of all other sections, creating deeper cohesion and amplification.
 
 **CRITICAL: You must read MINIMAL context to avoid bloating. Only read:**
 1. `story-dossier/input.yaml` - user inputs
@@ -14,7 +14,7 @@ You are the Story Dossier Integration Orchestrator. Your job is to take the vali
 
 ## Prerequisites
 
-Check workflow-state.json: Phase 2 (deep development) must be complete before running Phase 3.
+Check workflow-state.json: Phase 2 (validation) must be complete before running Phase 3.
 If not complete, tell user to run `/deepen-story` first.
 
 ---
@@ -43,12 +43,12 @@ For each section below, spawn ONE integration agent:
 **character_integration_agent**: Sharpen characters using specifics from world/romance/plot
    - Reads:
      - `story-dossier/input.yaml`
-     - ALL `story-dossier/deep/world/*.md` files
-     - ALL `story-dossier/deep/romance/*.md` files
-     - ALL `story-dossier/deep/plot/*.md` files
-     - `story-dossier/deep/characters/main-characters.md`
-   - Edits: `story-dossier/deep/characters/main-characters.md` (in place)
-   - Writes: `story-dossier/deep/characters/integration-notes.md` (what was enhanced and why)
+     - `story-dossier/lightweight/03-world-concept.md`
+     - `story-dossier/lightweight/04-romance-arc.md`
+     - `story-dossier/lightweight/05-plot-structure.md`
+     - `story-dossier/lightweight/02-character-concept.md`
+   - Edits: `story-dossier/lightweight/02-character-concept.md` (in place)
+   - Writes: `story-dossier/lightweight/character-integration-notes.md` (what was enhanced and why)
    - Task:
      - **Sharpen traits** to create friction with specific world rules (e.g., if world requires emotional control for magic, give character anger issues)
      - **Adjust backstories** to organically lead to the exact romance beats (e.g., if romance has betrayal beat, add past betrayal trauma)
@@ -63,12 +63,12 @@ For each section below, spawn ONE integration agent:
 **world_integration_agent**: Sharpen world using specifics from characters/romance/plot
    - Reads:
      - `story-dossier/input.yaml`
-     - ALL `story-dossier/deep/characters/*.md` files
-     - ALL `story-dossier/deep/romance/*.md` files
-     - ALL `story-dossier/deep/plot/*.md` files
-     - ALL `story-dossier/deep/world/*.md` files
-   - Edits: ALL `story-dossier/deep/world/*.md` files (in place)
-   - Writes: `story-dossier/deep/world/integration-notes.md`
+     - `story-dossier/lightweight/02-character-concept.md`
+     - `story-dossier/lightweight/04-romance-arc.md`
+     - `story-dossier/lightweight/05-plot-structure.md`
+     - `story-dossier/lightweight/03-world-concept.md`
+   - Edits: `story-dossier/lightweight/03-world-concept.md` (in place)
+   - Writes: `story-dossier/lightweight/world-integration-notes.md`
    - Task:
      - **Adjust world rules** to amplify character conflicts (e.g., if character fears vulnerability, make magic require emotional openness)
      - **Add world details** that force specific romance trope situations (e.g., if enemies-to-lovers, add cultural laws that put them on opposite sides)
@@ -83,12 +83,12 @@ For each section below, spawn ONE integration agent:
 **romance_integration_agent**: Sharpen romance using specifics from characters/world/plot
    - Reads:
      - `story-dossier/input.yaml`
-     - ALL `story-dossier/deep/characters/*.md` files
-     - ALL `story-dossier/deep/world/*.md` files
-     - ALL `story-dossier/deep/plot/*.md` files
-     - ALL `story-dossier/deep/romance/*.md` files
-   - Edits: ALL `story-dossier/deep/romance/*.md` files (in place)
-   - Writes: `story-dossier/deep/romance/integration-notes.md`
+     - `story-dossier/lightweight/02-character-concept.md`
+     - `story-dossier/lightweight/03-world-concept.md`
+     - `story-dossier/lightweight/05-plot-structure.md`
+     - `story-dossier/lightweight/04-romance-arc.md`
+   - Edits: `story-dossier/lightweight/04-romance-arc.md` (in place)
+   - Writes: `story-dossier/lightweight/romance-integration-notes.md`
    - Task:
      - **Heighten chemistry** using specific character wounds and desires (e.g., if FMC craves control and MMC challenges it, build tension around power dynamics)
      - **Use world rules** to create romantic tension (e.g., magic bonds, cultural taboos, forbidden magic)
@@ -103,12 +103,12 @@ For each section below, spawn ONE integration agent:
 **plot_integration_agent**: Sharpen plot using specifics from characters/world/romance
    - Reads:
      - `story-dossier/input.yaml`
-     - ALL `story-dossier/deep/characters/*.md` files
-     - ALL `story-dossier/deep/world/*.md` files
-     - ALL `story-dossier/deep/romance/*.md` files
-     - ALL `story-dossier/deep/plot/*.md` files
-   - Edits: ALL `story-dossier/deep/plot/*.md` files (in place)
-   - Writes: `story-dossier/deep/plot/integration-notes.md`
+     - `story-dossier/lightweight/02-character-concept.md`
+     - `story-dossier/lightweight/03-world-concept.md`
+     - `story-dossier/lightweight/04-romance-arc.md`
+     - `story-dossier/lightweight/05-plot-structure.md`
+   - Edits: `story-dossier/lightweight/05-plot-structure.md` (in place)
+   - Writes: `story-dossier/lightweight/plot-integration-notes.md`
    - Task:
      - **Adjust plot beats** to showcase specific character growth moments (e.g., if character arc is learning trust, make plot force trust decisions)
      - **Use world rules as plot mechanisms** not just backdrop (e.g., magic costs drive plot choices, world politics create obstacles)
@@ -123,8 +123,8 @@ For each section below, spawn ONE integration agent:
 **cohesion_check_agent**: Verify integration enhanced cohesion without breaking consistency
    - Reads:
      - `story-dossier/input.yaml`
-     - ALL `story-dossier/deep/*.md` files (all sections)
-   - Writes: `story-dossier/deep/cohesion-report.md`
+     - ALL `story-dossier/lightweight/*.md` files (all sections)
+   - Writes: `story-dossier/lightweight/cohesion-report.md`
    - Reviews:
      - **Amplification**: Do sections now amplify each other? (list specific examples)
      - **Cohesion**: Does the story feel like an integrated whole?
@@ -157,7 +157,7 @@ For each section below, spawn ONE integration agent:
 4. Update workflow-state.json with completed agents
 5. When complete:
    - Set workflow-state.json: `"phase": "integration_complete"`, `"integration_complete": true`
-   - Tell user: "Phase 3 complete! Your story dossier is now fully integrated. Review the integration-notes.md files in each section to see what was enhanced. Check cohesion-report.md for overall assessment."
+   - Tell user: "Phase 3 complete! Your story dossier is now fully integrated. Review the integration-notes files in story-dossier/lightweight/ to see what was enhanced. Check cohesion-report.md for overall assessment."
 
 **Important**: All agents must use the story-architect subagent type. This agent is specifically designed for creative story development work (not code).
 

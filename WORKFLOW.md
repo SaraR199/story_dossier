@@ -7,14 +7,14 @@ This repository uses a **branch-per-book** workflow to manage multiple story pro
 ### Main Branch
 - Contains the workflow system (`.claude/commands/`)
 - Contains shared blueprints (`story-dossier/blueprints/`)
-- Contains documentation (`README.md`)
+- Contains documentation (`README.md`, `WORKFLOW.md`)
 - Contains **template/empty** `story-dossier/` directory
 - **Does NOT contain** any book-specific story content
 
 ### Book Branches
 - Each book gets its own branch (e.g., `book/shadow-king`, `book/blood-bonds`)
 - Contains filled-out `story-dossier/input.yaml`
-- Contains generated story content (`lightweight/`, `deep/`)
+- Contains generated story content in `lightweight/` (all phases work here)
 - Branched from main, so includes all workflow updates
 
 ## Starting a New Book Project
@@ -55,13 +55,13 @@ git checkout book/book1-shadow-king
 git checkout -b book/book2-blood-bonds
 
 # Clear the old story content
-rm -rf story-dossier/lightweight/* story-dossier/deep/*
+rm -rf story-dossier/lightweight/*
 
 # Reset workflow state
-# Edit story-dossier/workflow-state.json to reset it
+echo '{"phase": "not_started", "lightweight_complete": false, "deep_complete": false, "integration_complete": false, "completed_agents": [], "current_agent": null, "validation_status": "pending", "errors": [], "timestamp": null}' > story-dossier/workflow-state.json
 
 # Edit input.yaml for new book
-# Run workflow for new book
+# Run workflow: /generate-story → /deepen-story → /integrate-story
 ```
 
 ## Working on Multiple Books
@@ -85,10 +85,10 @@ git checkout book/blood-bonds
 
 ```bash
 # View character differences between books
-git diff book/shadow-king:story-dossier/deep/characters/main-characters.md book/blood-bonds:story-dossier/deep/characters/main-characters.md
+git diff book/shadow-king:story-dossier/lightweight/02-character-concept.md book/blood-bonds:story-dossier/lightweight/02-character-concept.md
 
 # Check out a file from another branch for reference
-git show book/shadow-king:story-dossier/deep/world/world-bible.md
+git show book/shadow-king:story-dossier/lightweight/03-world-concept.md
 ```
 
 ## Updating Workflow System Across All Books
@@ -141,19 +141,17 @@ Examples:
 
 ### Main Branch
 ✅ `.claude/commands/` - workflow orchestrators
-✅ `story-dossier/blueprints/` - templates
+✅ `story-dossier/blueprints/` - templates (optional)
 ✅ `README.md`, `WORKFLOW.md` - documentation
 ✅ `story-dossier/input.yaml` - template only
 ✅ `story-dossier/workflow-state.json` - template only
 ❌ `story-dossier/lightweight/` - kept empty
-❌ `story-dossier/deep/` - kept empty
 
 ### Book Branches
 ✅ Everything from main (via merge)
 ✅ `story-dossier/input.yaml` - filled out for this book
 ✅ `story-dossier/workflow-state.json` - tracks this book's progress
-✅ `story-dossier/lightweight/` - generated concepts
-✅ `story-dossier/deep/` - generated dossier
+✅ `story-dossier/lightweight/` - all generated content (concepts, validation, integration)
 
 ## Best Practices
 
@@ -168,7 +166,7 @@ Examples:
 **Q: I accidentally committed story content to main. How do I fix it?**
 ```bash
 # Remove the files
-git rm -r story-dossier/lightweight/* story-dossier/deep/*
+git rm -r story-dossier/lightweight/*
 git commit -m "Remove story content from main"
 
 # The content still exists in your book branches
@@ -182,8 +180,13 @@ git checkout book/shadow-king
 # Create new branch
 git checkout -b book/blood-bonds
 
-# Keep the world files but regenerate characters/romance/plot
-# Manually edit as needed
+# Clear the old story content
+rm -rf story-dossier/lightweight/*
+
+# Reset workflow state
+echo '{"phase": "not_started", "lightweight_complete": false, "deep_complete": false, "integration_complete": false, "completed_agents": [], "current_agent": null, "validation_status": "pending", "errors": [], "timestamp": null}' > story-dossier/workflow-state.json
+
+# Edit input.yaml for new book and run workflow
 ```
 
 **Q: How do I share a blueprint across all my books?**

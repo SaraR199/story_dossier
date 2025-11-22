@@ -6,90 +6,55 @@ An automated AI-assisted workflow for fantasy romance authors to generate compre
 
 This system helps you go from **tropes + genre + research** → **complete story dossier** in three phases:
 
-1. **Phase 1 (Lightweight)**: Fast generation of core concepts - premise, characters, world, romance arc, plot structure
-2. **Phase 2 (Deep Development)**: Iterative expansion with contradiction checking and plot hole detection
+1. **Phase 1 (Generation)**: Fast generation of core concepts - premise, characters, world, romance arc, plot structure
+2. **Phase 2 (Validation)**: Consistency checking and resolution to fix contradictions and plot holes
 3. **Phase 3 (Integration)**: Sharpen each section using specifics from all others for maximum cohesion
 
-The result: A detailed, internally consistent, deeply integrated story dossier ready for outline generation.
+The result: A concise, internally consistent, deeply integrated story dossier ready for outline generation.
 
 ## Directory Structure
 
 ```
 story-dossier/
-├── input.yaml                  # YOU FILL THIS OUT
-├── workflow-state.json         # Tracks progress (auto-managed)
-├── blueprints/                 # Blueprint templates for different genres
-│   ├── epic-fantasy-romance.md
-│   ├── cozy-fantasy-romance.md (add your own)
-│   └── [your-custom-blueprint].md
-├── lightweight/                # Phase 1 outputs
-│   ├── 01-story-concept.md
-│   ├── 02-character-concept.md
-│   ├── 03-world-concept.md
-│   ├── 04-romance-arc.md
-│   └── 05-plot-structure.md
-└── deep/                       # Phase 2 & 3 outputs
-    ├── characters/
-    │   ├── main-characters.md
-    │   ├── consistency-check.md
-    │   ├── resolution-notes.md
-    │   └── integration-notes.md
-    ├── world/
-    │   ├── world-bible.md
-    │   ├── consistency-check.md
-    │   ├── resolution-notes.md
-    │   └── integration-notes.md
-    ├── romance/
-    │   ├── romance-arc-detailed.md
-    │   ├── consistency-check.md
-    │   ├── resolution-notes.md
-    │   └── integration-notes.md
-    ├── plot/
-    │   ├── detailed-structure.md
-    │   ├── consistency-check.md
-    │   ├── resolution-notes.md
-    │   └── integration-notes.md
-    ├── final-consistency-report.md
-    └── cohesion-report.md
+├── input.yaml                          # YOU FILL THIS OUT
+├── workflow-state.json                 # Tracks progress (auto-managed)
+├── blueprints/                         # Blueprint templates (optional)
+│   └── epic-fantasy-romance.md
+└── lightweight/                        # All phases work here
+    ├── 01-story-concept.md             # Phase 1: Core story premise
+    ├── 02-character-concept.md         # Phase 1: Character basics
+    ├── 03-world-concept.md             # Phase 1: World rules
+    ├── 04-romance-arc.md               # Phase 1: Romance progression
+    ├── 05-plot-structure.md            # Phase 1: Plot structure
+    ├── character-consistency-check.md  # Phase 2: Validation
+    ├── character-resolution-notes.md   # Phase 2: Fixes
+    ├── world-consistency-check.md      # Phase 2: Validation
+    ├── world-resolution-notes.md       # Phase 2: Fixes
+    ├── romance-consistency-check.md    # Phase 2: Validation
+    ├── romance-resolution-notes.md     # Phase 2: Fixes
+    ├── plot-consistency-check.md       # Phase 2: Validation
+    ├── plot-resolution-notes.md        # Phase 2: Fixes
+    ├── final-consistency-report.md     # Phase 2: Overall validation
+    ├── character-integration-notes.md  # Phase 3: Enhancement
+    ├── world-integration-notes.md      # Phase 3: Enhancement
+    ├── romance-integration-notes.md    # Phase 3: Enhancement
+    ├── plot-integration-notes.md       # Phase 3: Enhancement
+    └── cohesion-report.md              # Phase 3: Final assessment
 ```
 
-## Blueprint System
+## Workflow Philosophy
 
-**What are blueprints?**
-Blueprints are structured templates that define exactly what fields and sections your story dossier should contain. Each blueprint is tailored to a specific genre or story type.
+**Lightweight & Focused:**
+The workflow keeps everything in the `lightweight/` directory, avoiding bloat. Phase 1 generates core concepts, Phase 2 validates and fixes issues, and Phase 3 integrates sections for maximum cohesion.
 
-**Why use blueprints?**
-- Ensures Phase 2 outputs have YOUR preferred structure
-- Different genres need different information (epic fantasy vs contemporary romance)
-- Agents intelligently fill out YOUR template, not a generic one
-- Consistent format across all your projects
-
-**How it works:**
-1. You select a blueprint in `input.yaml` (e.g., `blueprint: "epic-fantasy-romance"`)
-2. Phase 2 agents read that blueprint file from `story-dossier/blueprints/`
-3. Agents intelligently identify which sections relate to their task (characters, world, romance, plot)
-4. Agents fill out those sections using the lightweight concepts from Phase 1
-5. Output follows your blueprint's exact structure and field names
-
-**Creating custom blueprints:**
-1. Copy an existing blueprint from `story-dossier/blueprints/`
-2. Modify sections, add/remove fields, reorganize as needed
-3. Save with a descriptive name (e.g., `urban-fantasy-romance.md`)
-4. Update `input.yaml` to use your new blueprint
-5. Agents will automatically adapt to your custom structure
-
-**Blueprint flexibility:**
-- Each blueprint can have completely different sections
-- Agents use AI to identify relevant sections (no hardcoded mapping)
-- You can reorganize, rename, or restructure however you want
-- Perfect for authors with specific workflows or genre requirements
+**No Over-Expansion:**
+Unlike traditional story development tools that create massive detailed documents, this workflow maintains concise concepts while ensuring they're logically consistent and well-integrated.
 
 ## How to Use
 
 ### Step 1: Fill Out Your Inputs
 
 Edit `story-dossier/input.yaml` with:
-- **Blueprint selection** - choose which blueprint structure to use
 - Romance tropes you want to explore
 - Genre/subgenre
 - Chapter count
@@ -124,34 +89,33 @@ Open the files in `lightweight/` and review:
 
 **Make any edits you want** directly in these files. They become the foundation for Phase 2.
 
-### Step 4: Run Phase 2 (Deep Development)
+### Step 4: Run Phase 2 (Validation)
 
 When you're happy with the lightweight concepts, run:
 ```
 /deepen-story
 ```
 
-This spawns 12 specialized agents (3 per section) that will:
+This spawns 9 specialized agents (2 per section + 1 final check) that will:
 
 **For each section (Characters, World, Romance, Plot):**
-1. **Expansion Agent**: Adds depth and detail
-2. **Consistency Agent**: Checks for contradictions and logic issues
-3. **Resolver Agent**: Fixes identified problems
+1. **Consistency Agent**: Checks for contradictions and logic issues
+2. **Resolver Agent**: Fixes identified problems in place
 
 **Plus a final global consistency check across all sections**
 
-**Output**: Detailed files in `deep/` directory with consistency reports
+**Output**: Validation reports and resolution notes in `lightweight/` directory. The core concept files are edited to fix any issues.
 
-**Time**: ~20-30 minutes (agents run sequentially)
+**Time**: ~10-15 minutes (agents run sequentially)
 
 ### Step 5: Review Phase 2 Outputs
 
-Review the files in `deep/` especially:
-- `consistency-check.md` files show what issues were found
-- `resolution-notes.md` files show how they were fixed
+Review the validation files in `lightweight/`:
+- `*-consistency-check.md` files show what issues were found
+- `*-resolution-notes.md` files show how they were fixed
 - `final-consistency-report.md` shows overall analysis
 
-**Make any edits you want** directly in these files before moving to Phase 3.
+**Make any edits you want** directly in the core concept files before moving to Phase 3.
 
 ### Step 6: Run Phase 3 (Integration Enhancement)
 
@@ -177,14 +141,14 @@ This spawns 5 specialized agents that will:
 - Romance beats align perfectly with plot turning points
 - Plot obstacles arise from character flaws + world constraints
 
-**Output**: Each section edited in place with `integration-notes.md` files showing enhancements
+**Output**: Core concept files edited in place with `*-integration-notes.md` files showing enhancements
 
-**Time**: ~15-20 minutes (agents run sequentially)
+**Time**: ~10-15 minutes (agents run sequentially)
 
 ### Step 7: Final Review
 
-Review the integration results:
-- `integration-notes.md` files in each section show what was enhanced and why
+Review the integration results in `lightweight/`:
+- `*-integration-notes.md` files show what was enhanced and why
 - `cohesion-report.md` shows overall assessment with cohesion score
 - The complete dossier should feel like an integrated whole, not separate pieces
 
@@ -244,9 +208,9 @@ Configured for:
 
 ### To Modify
 Edit the orchestrator commands in `.claude/commands/`:
-- `generate-story.md` - Phase 1 logic
-- `deepen-story.md` - Phase 2 logic
-- `integrate-story.md` - Phase 3 logic
+- `generate-story.md` - Phase 1 (generation) logic
+- `deepen-story.md` - Phase 2 (validation) logic
+- `integrate-story.md` - Phase 3 (integration) logic
 
 ## Managing Multiple Book Projects
 
