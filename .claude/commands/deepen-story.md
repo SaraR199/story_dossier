@@ -22,11 +22,16 @@ If not complete, tell user to run `/generate-story` first.
 ## Phase 2 Workflow: Consistency Validation and Resolution
 
 **The Goal:**
-Phase 2 validates the lightweight concepts for internal consistency without adding detail. Each section gets checked for contradictions, logic issues, and plot holes, then problems are resolved in place.
+Phase 2 validates the lightweight concepts for internal consistency without adding detail. Each section gets checked for contradictions, logic issues, and logic issues, then problems are resolved in place.
+
+**Execution Strategy:**
+- **Step 1:** Run both consistency checks IN PARALLEL
+- **Step 2:** Run both resolver agents IN PARALLEL
+- **Step 3:** Run global consistency check
 
 ---
 
-For each section below, spawn TWO agents in sequence:
+For each section below, spawn agents as described:
 
 ### Section 1: Characters
 
@@ -60,7 +65,6 @@ For each section below, spawn TWO agents in sequence:
      - `story-dossier/lightweight/01-story-concept.md`
      - `story-dossier/lightweight/02-character-concept.md`
      - `story-dossier/lightweight/03-world-concept.md`
-     - `story-dossier/lightweight/character-resolution-notes.md` (if available)
    - Writes: `story-dossier/lightweight/world-consistency-check.md`
    - Reviews:
      - Do world rules make internal sense?
@@ -103,18 +107,22 @@ For each section below, spawn TWO agents in sequence:
 1. Read `story-dossier/input.yaml` and `story-dossier/workflow-state.json`
 2. Verify Phase 1 is complete (check workflow-state.json)
 3. If Phase 1 incomplete, tell user to run `/generate-story` first
-4. For each section (Characters, World):
-   - **Spawn consistency agent using subagent_type="story-architect"**
-   - Wait for completion, report progress to user
-   - **Spawn resolver agent using subagent_type="story-architect"**
-   - Wait for completion, report progress to user
-   - Update workflow-state.json with completed agents
-5. **Spawn global consistency agent using subagent_type="story-architect"**
-6. When complete:
+4. Run validation in 3 steps:
+   - **Step 1:** Spawn character_consistency_agent AND world_consistency_agent IN PARALLEL by using TWO Task tool calls in a SINGLE message
+   - Wait for both to complete, update workflow-state.json, report progress
+   - **Step 2:** Spawn character_resolver_agent AND world_resolver_agent IN PARALLEL by using TWO Task tool calls in a SINGLE message
+   - Wait for both to complete, update workflow-state.json, report progress
+   - **Step 3:** Spawn global_consistency_agent using Task tool
+   - Wait for completion, update workflow-state.json, report progress
+5. When complete:
    - Set workflow-state.json: `"phase": "validation_complete"`, `"deep_complete": true`
    - Tell user: "Phase 2 complete! Your lightweight concepts have been validated and refined. Review the consistency reports in story-dossier/lightweight/ to see what was checked and fixed."
 
-**Important**: All agents must use the story-architect subagent type. This agent is specifically designed for creative story development work (not code).
+**Important**:
+- All agents must use the story-architect subagent type (this is a custom agent optimized for story development)
+- To run agents in parallel, send multiple Task tool calls in a single message
+- Consistency agents can run simultaneously because they read the same story files and write different check files
+- Resolver agents can run simultaneously because they edit different concept files
 
 **Use extended thinking mode when spawning agents to ensure quality validation.**
 

@@ -61,12 +61,12 @@ In Claude Code, run:
 
 This spawns 3 specialized agents that will:
 1. Generate your story premise and themes
-2. Create character concepts with arcs and motivations
-3. Design world rules that enable your story
+2. Create character concepts with arcs and motivations (runs in parallel with world)
+3. Design world rules that enable your story (runs in parallel with character)
 
 **Output**: 3 core files in `lightweight/` directory
 
-**Time**: ~3-5 minutes (agents run sequentially)
+**Time**: ~2-3 minutes (story sequential, then character + world in parallel)
 
 ### Step 3: Review and Validate
 
@@ -86,15 +86,13 @@ When you're happy with the lightweight concepts, run:
 
 This spawns 5 specialized agents (2 per section + 1 final check) that will:
 
-**For each section (Characters, World):**
-1. **Consistency Agent**: Checks for contradictions and logic issues
-2. **Resolver Agent**: Fixes identified problems in place
-
-**Plus a final global consistency check across all sections**
+**Step 1:** Both consistency agents run in parallel
+**Step 2:** Both resolver agents run in parallel
+**Step 3:** Global consistency check
 
 **Output**: Validation reports and resolution notes in `lightweight/` directory. The core concept files are edited to fix any issues.
 
-**Time**: ~5-7 minutes (agents run sequentially)
+**Time**: ~3-4 minutes (consistency checks in parallel, resolvers in parallel, then global check)
 
 ### Step 5: Review Phase 2 Outputs
 
@@ -114,10 +112,11 @@ When you're satisfied with the validated sections, run:
 
 This spawns 3 specialized agents that will:
 
-**Integration Refinement:**
-1. **Character Integration**: Sharpen characters using specifics from story and world
-2. **World Integration**: Adjust world to amplify character conflicts and story themes
-3. **Cohesion Check**: Verify integration enhanced cohesion without breaking consistency
+**Step 1:** Both integration agents run in parallel
+- **Character Integration**: Sharpen characters using specifics from story and world
+- **World Integration**: Adjust world to amplify character conflicts and story themes
+
+**Step 2:** Cohesion check verifies integration
 
 **The Goal:** Make sections **amplify** each other, not just coexist.
 
@@ -129,7 +128,7 @@ This spawns 3 specialized agents that will:
 
 **Output**: Core concept files edited in place with integration notes showing enhancements
 
-**Time**: ~3-5 minutes (agents run sequentially)
+**Time**: ~2-3 minutes (both integrations in parallel, then cohesion check)
 
 ### Step 7: Final Review
 
@@ -177,11 +176,12 @@ Each specialized agent:
 - Writes focused outputs
 - Updates workflow state
 
-### Sequential Processing
-Agents run one at a time to:
-- Ensure consistency (each agent builds on previous work)
-- Avoid context bloat from parallel processing
-- Allow for human validation between phases
+### Parallel & Sequential Processing
+The workflow balances parallel and sequential execution:
+- **Parallel:** Independent agents run simultaneously (e.g., character + world generation)
+- **Sequential:** Dependent steps run in order (e.g., story concept before character/world)
+- Maximizes speed while maintaining logical dependencies
+- Allows for human validation between phases
 
 ## Customization
 
