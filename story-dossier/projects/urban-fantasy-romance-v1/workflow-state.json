@@ -1,11 +1,11 @@
 {
-  "phase": "lightweight_complete",
+  "phase": "validation_complete",
   "lightweight_complete": true,
-  "deep_complete": false,
+  "deep_complete": true,
   "integration_complete": false,
-  "completed_agents": ["story_concept_agent", "character_concept_agent", "world_concept_agent"],
+  "completed_agents": ["story_concept_agent", "character_concept_agent", "world_concept_agent", "character_consistency_agent", "world_consistency_agent", "character_resolver_agent", "world_resolver_agent", "global_consistency_agent", "global_resolver_agent"],
   "current_agent": null,
-  "validation_status": "ready_for_deepening",
+  "validation_status": "ready_for_integration",
   "errors": [],
   "timestamp": "2025-11-22T00:00:00Z"
 }

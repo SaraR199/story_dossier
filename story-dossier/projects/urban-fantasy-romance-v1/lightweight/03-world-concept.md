@@ -25,9 +25,14 @@ Magic in this world is **intuitive, mysterious, and ancient**—more art than sc
 - **Innate Ability**: Most supernatural beings are born with their magic. Vampires instinctively glamour; werewolves transform with the moon; fae manipulate perception without thinking about it. It's as natural as breathing, though skill improves with practice.
 - **Learned Traditions**: Witches, mages, ritual practitioners study magical techniques passed down through covens, families, or secret societies. Their magic requires knowledge and will, but still operates on intuition more than rigid rules.
 - **Environmental Resonance**: Certain places amplify magical ability—ley line crossings, ancient sites, liminal spaces. Magic feels easier in these locations, as if the boundary between intention and manifestation thins.
+- **Magical Artifacts and Tools**: Some items are "charged" or "enchanted" to contain magic within the object itself, allowing non-magical users to activate them with training but not innate ability. These items function like magical batteries—the magic is already present in the artifact; the user just needs to know how to trigger it (speaking a command word, performing a specific gesture, applying physical pressure to an activation point). Guard-issued detection devices, certain protective amulets, and some weapons fall into this category, making them accessible to trained human operatives like Marcus. More complex or powerful artifacts require innate magical ability to use and won't function for non-magical humans.
 
 **The Mystery Remains**:
-Even long-lived supernatural beings don't fully understand magic's nature. Why does it work? Where does the power come from? Questions without definitive answers. This uncertainty keeps magic wondrous and slightly dangerous—it can't be completely controlled or predicted, which is both its appeal and its peril.
+Even long-lived supernatural beings don't fully understand magic's nature. Why does it work? Where does the power come from? Questions without definitive answers. This uncertainty keeps magic wondrous and slightly dangerous.
+
+However, while magic's fundamental nature remains mysterious, **practiced applications produce consistent results**. A fae who has maintained glamours for centuries can do so reliably, even without understanding the underlying mechanism—similar to how humans used fire effectively long before understanding combustion chemistry. Skilled practitioners develop intuitive mastery over their specific abilities, making their magic dependable even if the "why" remains unknown.
+
+The unpredictability manifests in edge cases: attempting unfamiliar magic, pushing beyond practiced limits, or working in magically unstable environments. This is why the Veil maintenance techniques work reliably (they're well-practiced, collective efforts refined over decades), while experimental or forbidden magic carries significant risk.
 
 ## Supernatural Community Structure
 
@@ -72,6 +77,8 @@ True-Sight—the ability to see through glamours—is exceptionally rare in huma
 
 Why it's rare: The ability seems to be genetic but doesn't breed true. It appears sporadically across bloodlines with no clear pattern. Some theorize it's a recessive trait from ancient human-supernatural interbreeding; others believe it's random mutation. True-Seers are valuable because they can identify glamoured beings, detect hidden spaces, and see through magical deception—making them perfect for enforcement work but also targets for anyone wanting to operate unseen.
 
+**True-Sight Development**: While True-Sight itself is innate and fixed—Kira will always see through glamours—her ability to *interpret and utilize* what she sees develops with training and experience. Untrained True-Seers can see through illusions but can't necessarily identify what they're looking at or understand its significance. Guard training teaches Kira to recognize different types of glamours, identify species-specific magical signatures, read the patterns of wards and enchantments, and detect magical residue left by recent spellwork. Her perception doesn't strengthen, but her magical literacy does—she's learning to read a language she could always see but never understood.
+
 **Consequences of Exposure**:
 The Covenant takes Veil breaches with extreme seriousness because the consequences could be catastrophic:
 
@@ -89,6 +96,8 @@ The supernatural community's power structure is a careful balance of force, poli
 
 **The Conclave**:
 A governing council representing major supernatural factions and human magical communities. Each faction sends representatives (vampires have two seats, fae courts have one each, werewolf packs elect a representative, witch covens elect one, independent supernaturals theoretically have a seat but it's often vacant). The Conclave sets policy, interprets Covenant law, and directs the Guard.
+
+The independent supernatural seat remains vacant more often than not because independents, by definition, resist organizational structures and rarely achieve the consensus needed to elect a representative. The formal factions also subtly discourage independent participation through procedural barriers and social pressure—a fragmented voting bloc is easier to ignore than a unified one. When the seat is occasionally filled, the representative typically lacks the political capital and factional backing to wield real influence, making the position largely symbolic.
 
 **Real Power Distribution**:
 
@@ -122,7 +131,11 @@ The peace is more fragile than it appears. The Covenant has held for sixty years
 These specific worldbuilding elements exist to make the premise work and create the conditions for Kira and Marcus's story.
 
 **Why Kira's True-Sight Makes Her Valuable**:
-The Covenant Guard desperately needs True-Seers because glamour is the supernatural community's primary defense. Most Guard operatives—even supernatural ones—can be deceived by sufficiently skilled glamour magic. Kira can identify beings trying to hide, detect disguised artifacts, see through illusions that fool even experienced agents. This makes her an ideal investigator for internal affairs, artifact theft, and Veil breach cases.
+The Covenant Guard desperately needs True-Seers because glamour is the supernatural community's primary defense. Most Guard operatives—even supernatural ones—can be deceived by sufficiently skilled glamour magic.
+
+**Glamour Creation vs. Detection**: The ability to create glamours and the ability to detect them are separate skills. Most supernatural beings can create glamours to varying degrees of sophistication, but cannot reliably see through others' glamours—it's like being able to lie convincingly doesn't make you a human lie detector. Even fae who are masters of glamour must actively attempt to detect deception and can be fooled by skilled work from other practitioners. Supernatural beings can sometimes sense when "something feels off" about a glamour, but this requires focused attention and can be defeated by expert technique.
+
+**True-Sight's Unique Advantage**: Kira's True-Sight is passive, always-on perception that can't be fooled. She doesn't have to suspect deception to see through it—glamours simply don't work on her. This makes her dramatically more effective than even experienced supernatural operatives who must actively probe for illusions. She can identify beings trying to hide, detect disguised artifacts, see through illusions that fool even experienced agents. This makes her an ideal investigator for internal affairs, artifact theft, and Veil breach cases.
 
 She's also valuable because True-Seers are rare enough that losing one is strategically significant. The Guard invested resources in recruiting her, training her, and integrating her into operations. She represents an asset they can't easily replace.
 
@@ -132,7 +145,9 @@ The same ability that makes her valuable makes her a threat. Criminals want her 
 Additionally, True-Seers often struggle psychologically. Seeing through the Veil without the ability to turn it off is exhausting and isolating. Kira must constantly process information other humans don't perceive, making it harder to maintain relationships with mundane humans while never being fully accepted by supernatural beings.
 
 **The Conspiracy's Threat**:
-The forbidden magic being weaponized is designed to **shatter the Veil permanently**. Someone in the Guard's leadership is deliberately creating a situation that would expose the supernatural world to mundane humans en masse—likely through a spectacular magical incident too large to rationalize or cover up.
+The forbidden magic being weaponized is designed to **trigger cascading Veil collapse**. Someone in the Guard's leadership is deliberately creating a situation that would expose the supernatural world to mundane humans en masse.
+
+Because the Veil operates as a multi-layered system (individual glamours, location wards, collective reinforcement, and human rationalization), it can't be "broken" with a single action. Instead, the conspiracy plans to create a spectacular magical incident so massive and undeniable that all four layers fail simultaneously: glamours won't cover the event's scale, wards can't redirect that many witnesses, collective will fractures under the strain, and human psychology can't rationalize away irrefutable evidence (especially with modern recording technology). Once one layer catastrophically fails, the others collapse in cascade—like a dam breach that overwhelms every downstream barrier.
 
 Why this threatens everyone:
 - Exposure would lead to human-supernatural conflict that could devastate both communities
