@@ -7,12 +7,16 @@
 
 The Veil is not a single barrier but a living, breathing network of interwoven wards, bloodline agreements, and collective belief that separates mundane human perception from supernatural reality. Think of it as a perceptual filter layered over the world—supernatural beings and magic exist in the same physical space as humans, but the Veil ensures humans see only what their minds can rationalize. A vampire negotiating territory in a downtown bar appears as an ordinary patron. A shadow market looks like an empty warehouse. The magic doesn't hide the supernatural elsewhere; it hides it in plain sight.
 
+**Wards and the Veil Structure:** Individual wards are protective barriers created for specific purposes—shielding buildings, people, or objects. The Veil itself is a vast interconnected network of ancient foundational wards working collectively to create the perceptual filter. Most wards are small, personal protections. The ancient structural wards that form the Veil's foundation are massive, permanent workings embedded in locations of power. When Mara shattered the ancient ward, she didn't break a simple protection—she damaged a load-bearing component of the Veil's network, creating a localized tear through which someone with dormant bloodlines could see through the filter entirely.
+
 The Veil operates on three principles:
-- **Consent** - The supernatural community collectively maintains it through ancient pacts
+- **Supernatural Consensus** - The supernatural community collectively maintains it through ancient pacts and ongoing magical investment
 - **Perception** - It filters what humans can process, bending their interpretation of reality
 - **Protection** - It shields both worlds from each other's dangers
 
 Humans without magical bloodlines unconsciously cooperate with the Veil, their minds smoothing over inconsistencies, forgetting strange encounters, rationalizing the impossible. Those with dormant magic sometimes sense wrongness—déjà vu, the feeling of being watched, glimpses at the edge of vision—but rarely break through completely.
+
+**Technology and the Veil:** The perceptual filter extends to interpretation of recorded data. Humans viewing photos or video of supernatural activity see what their minds can rationalize—shadows become lighting artifacts, inhuman features become distortion, impossible events become explainable coincidence. The Veil doesn't prevent recording; it ensures human observers rationalize what they see. However, as the Veil weakens, this interpretive function is failing—recordings are beginning to show supernatural reality in ways human minds can no longer dismiss, creating dangerous "glitches" in the filter.
 
 ### How It's Breaking
 
@@ -27,6 +31,8 @@ The Veil isn't collapsing uniformly—it's fracturing in specific locations, lik
 
 **The Deeper Problem:**
 The Veil was designed for a supernatural population in balance. But something is drawing unprecedented amounts of magical energy through specific points in the barrier, like overloading a circuit. Each surge weakens the overall structure. Mara shattering the ward wasn't random—she was standing at an epicenter when someone deliberately channeled power through that exact location.
+
+**Why Gradual Weakening:** The Veil cannot be destroyed by a single catastrophic attack—it's too powerful, sustained by centuries of collective magical investment and ancient structural wards. Like a massive stone arch, it must be weakened incrementally by creating multiple stress fractures at key structural points before the entire system will collapse. A premature direct assault would trigger Commission defenses and alert all factions to the threat. The gradual strategy allows the perpetrator to remain undetected while systematically compromising the Veil's foundation, ensuring complete collapse when the final breach occurs.
 
 ### What Happens When It Breaks
 
@@ -44,7 +50,7 @@ Neither world is ready. The consequences would be apocalyptic.
 
 ### Purpose and Authority
 
-The Veil Commission was established in 1692 (officially after the Salem trials made it clear that exposure meant extinction for supernatural communities). It serves as investigator, judge, and enforcer of the supernatural world's prime directive: preserve the Veil, maintain the secret, protect the balance.
+The Veil Commission was established in 1692 (officially after the Salem trials made it clear that exposure meant extinction for supernatural communities). Before the Commission, localized veils and protections existed for centuries, maintained by individual factions and regional alliances. The Commission's creation unified these disparate efforts into a comprehensive global system, standardizing protocols and creating centralized enforcement. It serves as investigator, judge, and enforcer of the supernatural world's prime directive: preserve the Veil, maintain the secret, protect the balance.
 
 **Core Functions:**
 - **Investigation** - Tracking Veil breaches, monitoring weak points, identifying threats
@@ -82,7 +88,9 @@ The Commission's power comes from consensus among factions who otherwise compete
 
 **Binding Agreements** - Magically enforced contracts and oaths that ensure compliance. Breaking a Commission binding has supernatural consequences (varies by the individual's nature, but universally unpleasant).
 
-**Memory Modification** - Used on mundane humans who witness too much. Controversial within the Commission—it's invasive, imperfect, and leaves psychological scars.
+**Revelation Prohibition** - Revealing supernatural reality to mundane humans without Commission authorization is strictly forbidden and constitutes a serious Veil breach. Consequences range from binding agreements preventing future disclosure, to memory modification of both revealer and revealed, to exile in extreme cases. Exceptions require formal Commission approval and are rarely granted—typically only when a human with awakened bloodlines demonstrates both ability and need-to-know.
+
+**Memory Modification** - Used on mundane humans who witness too much. Controversial within the Commission—it's invasive, imperfect, and leaves psychological scars. Protocol distinguishes between ordinary witnesses (subject to immediate memory modification) and individuals with awakened bloodlines (whose active magical abilities make memory modification dangerous and potentially ineffective). Mara falls into the latter category—her awakened Veil sense and warding abilities mark her as supernaturally active, requiring investigation and assessment rather than standard containment protocols.
 
 **Exile** - Banishment from Commission protection and supernatural society. Without the community's support and the Veil's shelter, exile is effectively a death sentence.
 
@@ -98,6 +106,8 @@ Portland's supernatural world occupies the same physical space as the mundane ci
 
 The Veil doesn't create pocket dimensions; it creates perceptual blind spots. A human walks past a shadow market and sees a condemned building. A supernatural being sees thriving commerce.
 
+**Population Scale:** Portland's supernatural community numbers approximately 800-1000 beings—large enough to sustain factional politics and maintain the Veil through collective effort, but small enough that secrecy remains manageable. Major factions (vampire courts, shifter packs, witch covens, fae enclaves) each comprise 100-200 members, with independent practitioners, rare species, and mixed-heritage individuals making up the remainder. This creates an "everyone knows someone who knows everyone" community dynamic—maintaining anonymity is difficult, but the network provides mutual protection and support. The Pacific Northwest Commission office operates with approximately 15 field investigators covering the entire region, making Kieran's workload substantial and his judgment calls critical.
+
 ### Key Supernatural Locations
 
 **The Burnside Threshold** - A night market operating beneath the Burnside Bridge where supernatural Portland conducts commerce. Vendors sell everything from spelled charms to black market information. Neutral territory by ancient agreement, making it the one place where all factions mix freely. Also a focal point for gossip, intrigue, and the pulse of supernatural politics.
@@ -105,11 +115,11 @@ The Veil doesn't create pocket dimensions; it creates perceptual blind spots. A 
 **The Commission Office - The Dekum Building** - A historic apartment building in the Alberta Arts District. To humans, it's been under renovation for decades. To supernatural Portland, it houses the Commission's regional headquarters, interrogation rooms, record archives, and holding cells for those awaiting judgment.
 
 **Territorial Divisions:**
-- **Downtown Core** - Contested territory, officially neutral but actually a patchwork of informal agreements. Vampires control high-rise penthouses and underground clubs. Corporate witches maintain offices in the business district.
+- **Downtown Core** - Contested territory, officially neutral but actually a patchwork of informal agreements. Vampires control high-rise penthouses and underground clubs. Corporate witches who provide magical services to supernatural business interests maintain mundane-appearing offices in the business district, blending seamlessly into the professional landscape.
 - **Pearl District/Northwest** - Fae enclave territory. The neighborhood's artistic reputation isn't coincidence—fae aesthetic influence bleeds through the Veil.
-- **Southeast Powell/Division** - Shifter territory, particularly the packs. Industrial areas and access to Forest Park's edges.
+- **Southeast Powell/Division** - Shifter territory, particularly the packs. Industrial areas and residential neighborhoods near Forest Park, though the park itself remains neutral.
 - **St. Johns** - Witch coven stronghold. Working-class neighborhood where human residents unknowingly benefit from protective wards.
-- **Forest Park** - Neutral wilderness, sacred to multiple factions. Ancient agreements prevent territorial claims, making it a sanctuary and occasional meeting ground.
+- **Forest Park** - Neutral wilderness, sacred to multiple factions. Ancient agreements prevent territorial claims, making it a sanctuary and occasional meeting ground. All factions have equal access; shifter packs living nearby serve as traditional stewards who monitor the borders but hold no ownership rights.
 
 **Weak Points in the Veil:**
 - The Shanghai Tunnels - Historic and magically significant, always thin
@@ -129,6 +139,8 @@ However, Portland also attracts humans sensitive to magic—artists, creatives, 
 
 **Vampires** - Long-lived, politically sophisticated, organized into courts. They've held significant Commission influence for centuries. Powers include enhanced strength/speed, mesmerism, and varying degrees of day-walking ability depending on age and bloodline. Vulnerabilities are real but less Hollywood—sunlight weakens, doesn't incinerate; invitation rules apply to sanctified thresholds only.
 
+Ancient vampires (300+ years) can function in daylight with only minor weakness—reduced strength, sensitivity to direct sun, need for protective clothing. Younger vampires find daylight operations more challenging but manageable for limited periods. This allows vampire Commission members like Lena Corvus to work daytime investigations when necessary, though they prefer evening operations when at full strength.
+
 Vampire politics revolve around bloodlines, age hierarchies, and territory control. They view themselves as supernatural society's aristocracy, which creates friction with more egalitarian factions.
 
 **Shifters** - Werewolves, werecats, and rarer species. Pack-based social structures with strong territorial instincts. Transform with the moon cycle but can maintain human form most of the time. Enhanced physical abilities, healing, and heightened senses. Vulnerable to silver, but it's a weakness not an instant kill.
@@ -137,13 +149,15 @@ Shifter culture values loyalty, physical prowess, and pack bonds. They resent va
 
 **Fae** - Not Seelie/Unseelie courts but rather enclaves of fae who've integrated into the human world while maintaining their nature. Glamour, persuasion, and reality-bending minor magics. Bound by complex rules about truth, bargains, and hospitality. Iron disrupts their magic.
 
-Fae politics are Byzantine, focused on favors, debts, and impossible-to-track social obligations. They're simultaneously Portland's most integrated faction (appearing completely human) and its most alien (operating by incomprehensible social rules).
+Fae bloodlines carry specific affinities: some excel at illusion, others at persuasion or natural magic. The Thornborn bloodline specializes in boundary magic—sensing and manipulating thresholds, barriers, and edges between states. This makes Thornborn fae naturally suited to Veil work and enforcement, though their truth-binding nature means they cannot lie outright, only carefully navigate precise wording and selective omission.
 
-**Witches** - Humans born with the ability to channel and shape magical energy. Organized into covens, family lines, and solo practitioners. Magic requires components, will, and knowledge—no one witch knows everything. Specializations include wards, divination, elemental work, healing, curses, and potion craft.
+Fae politics are Byzantine, focused on favors, debts, and impossible-to-track social obligations. They're simultaneously Portland's most integrated faction (appearing completely human) and its most alien (operating by incomprehensible social rules). Fae investigators like Kieran operate under Commission authority but remain bound by their inherent nature—they can be trusted to keep oaths absolutely, but extracting a straight answer requires skill.
+
+**Witches** - Humans born with the ability to channel and shape magical energy through traditional practices: components, will, ritual, and learned knowledge. Organized into covens and family lines. Specializations include wards, divination, elemental work, healing, curses, and potion craft. The witch faction seat on the Commission represents all practitioners of traditional witchcraft, whether coven-affiliated or solo.
 
 Witch factions range from traditional covens maintaining old ways to corporate witches offering magical services to supernatural clients. Internal tensions focus on sharing knowledge versus hoarding power.
 
-**Independent Practitioners** - Magical humans who don't fit coven structures. Includes Kieran—a witch by birth but with unusual specializations (Veil magic, binding work, investigative divination). Also encompasses hedge witches, sorcerers, and those with unique bloodline abilities.
+**Independent Practitioners** - Magical humans whose abilities don't fit traditional witchcraft models: hedge witches with intuitive rather than learned magic, sorcerers who channel power differently, those with unique bloodline abilities, and practitioners of non-European magical traditions. This Commission seat ensures representation for magical humans who operate outside established witch hierarchies and practice systems that don't align with conventional categories.
 
 **Other** - Catch-all category for rarer beings: elemental-touched bloodlines, psychics, empaths, those with mixed heritage, and entities that don't fit standard categories. This category's Commission seat ensures minority voices aren't lost, but also lumps together vastly different beings with little in common.
 
@@ -157,11 +171,13 @@ Witch factions range from traditional covens maintaining old ways to corporate w
 
 **The Veil Commission's Unique Position** - Investigators like Kieran operate outside normal factional hierarchies. This gives them freedom but also isolation—they're not quite neutral, not quite partisan, trusted by the institution but not necessarily by individual factions.
 
-## Magic System (Soft)
+## Magic System (Medium-Soft)
 
 ### Core Principles
 
 Magic in this world is **energy** that certain beings can sense, channel, and shape. It exists naturally—ley lines, sacred spaces, emotional resonance—and can be cultivated through practice, ritual, and will.
+
+This system balances intuitive wonder with reliable structure: magic has defined abilities and clear costs, but operates through intention and resonance rather than strict formulaic rules. Readers will understand what magic CAN do without being given precise mechanical explanations of HOW it works.
 
 **Key Characteristics:**
 - **Intuitive, not scientific** - Magic responds to intention, emotion, and symbolic meaning. Two practitioners performing the same spell might achieve different results based on their understanding and connection to the work.
@@ -198,7 +214,16 @@ Fated mates are not mind control or love potions. The magical resonance creates 
 
 Supernatural society debates whether fated bonds represent genuine compatibility or magical coercion. Can you truly choose someone your magic has already chosen? Does the intensity of the connection overshadow rational judgment? These questions have no settled answers, making fated mate relationships simultaneously coveted and suspect.
 
-For Mara and Kieran, the resonance is undeniable—but both must decide if they're acting on genuine feeling or responding to magical imperative.
+**Consequences of Refusing the Bond:**
+
+Rejecting a fated mate bond doesn't cause direct magical harm or violate any supernatural law. However, the practical consequences include:
+- The pull and resonance remain active—proximity continues to intensify the connection, making avoidance the only true escape
+- Many who resist report feeling incomplete or restless, though whether this is magical consequence or psychological awareness of lost potential is debated
+- The bond cannot be magically severed or transferred; it simply exists, indifferent to whether the individuals act on it
+- Some fated pairs successfully maintain distance and separate lives; others find the pull too strong to resist long-term
+- There's no consensus on whether refusing a bond is healthier (preserving agency) or harmful (denying one's nature)
+
+This ambiguity preserves genuine choice while acknowledging the bond's power. For Mara and Kieran, the resonance is undeniable—but both must decide if they're acting on genuine feeling or responding to magical imperative, knowing the pull will persist regardless of their decision.
 
 ### How Mara's Abilities Work
 
@@ -241,16 +266,21 @@ The apocalyptic nature of total Veil failure gives urgency to the investigation 
 
 ### Why Mara Specifically?
 
-The key mystery: Mara's awakening wasn't random. Someone engineered the circumstances of her breakthrough.
+The key mystery isn't HOW Mara broke through the Veil—her intuitive warding abilities explain that clearly. The real questions are: WHO is she, WHERE did her bloodline come from, and WHY was her awakening deliberately engineered?
+
+**The Core Mysteries:**
+- **Unknown Bloodline Origin:** Mara has no known supernatural ancestry, yet possesses powerful Veil-manipulation abilities. What bloodline is she carrying, and why was it hidden?
+- **Engineered Awakening:** Someone arranged for Mara to be at that exact location when power was channeled through the ward. This wasn't coincidence—it was orchestrated activation.
+- **Strategic Value:** Her specific abilities (Veil sense, intuitive warding, resonance amplification) suggest she was targeted for a reason. Does the perpetrator need her abilities for their larger plan, or is she a threat they want under observation?
 
 **Possible Reasons:**
-- Her bloodline has specific properties relevant to the Veil's structure
-- Her compatibility with Kieran (a Veil specialist) creates opportunities for manipulation
-- She's a pawn meant to distract the Commission while the real plan unfolds
-- Her abilities are needed to complete a larger working that weakens the Veil permanently
-- She's collateral damage in an attack aimed at a different target
+- Her unknown bloodline has specific properties essential to destroying the Veil's structure
+- Her compatibility with Kieran (a Thornborn Veil specialist) creates opportunities for manipulation or access to Commission intelligence
+- She's a pawn meant to distract the Commission while the real plan unfolds elsewhere
+- Her abilities are needed to complete a larger working that will trigger the Veil's final collapse
+- She's the descendant of those who originally created the Veil, making her uniquely capable of unmaking it
 
-The investigation must uncover not just who is weakening the Veil, but why Mara's involvement was necessary and what they intend to do with her abilities now that they're active.
+The investigation must uncover not just who is weakening the Veil, but who Mara really is, why her bloodline was kept secret, and what the perpetrator intends to do with her now that her abilities are active.
 
 ### Ticking Clock
 
