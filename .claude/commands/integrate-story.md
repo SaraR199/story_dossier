@@ -18,7 +18,7 @@ You are the Story Dossier Integration Orchestrator. Your job is to take the vali
 3. **Set the project paths** for this workflow:
    - Input file: `story-dossier/projects/<project-name>/input.yaml`
    - Workflow state: `story-dossier/projects/<project-name>/workflow-state.json`
-   - Output directory: `story-dossier/projects/<project-name>/lightweight/`
+   - Story files: `story-dossier/projects/<project-name>/lightweight/`
 
 **CRITICAL: You must read MINIMAL context to avoid bloating. Only read:**
 1. `story-dossier/projects/<project-name>/input.yaml` - user inputs
@@ -66,7 +66,6 @@ For each section below, spawn integration agents as described:
      - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
    - Edits: `story-dossier/projects/<project-name>/lightweight/02-character-concept.md` (in place)
-   - Writes: `story-dossier/projects/<project-name>/lightweight/character-integration-notes.md` (what was enhanced and why)
    - Task:
      - **Sharpen traits** to create friction with specific world rules (e.g., if world requires emotional control for magic, give character anger issues)
      - **Adjust backstories** to organically connect to the story themes and world history
@@ -75,6 +74,7 @@ For each section below, spawn integration agents as described:
      - **Add details** that callback to world lore and story premise
      - **Make character voices** reflect world culture and setting
      - Focus on making characters feel inseparable from THIS specific world and story
+   - Output: Return brief summary (max 30 words): key integration enhancements made
 
 ### Section 2: World Integration
 
@@ -85,7 +85,6 @@ For each section below, spawn integration agents as described:
      - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
    - Edits: `story-dossier/projects/<project-name>/lightweight/03-world-concept.md` (in place)
-   - Writes: `story-dossier/projects/<project-name>/lightweight/world-integration-notes.md`
    - Task:
      - **Adjust world rules** to amplify character conflicts (e.g., if character fears vulnerability, make magic require emotional openness)
      - **Add world details** that challenge the specific characters in this story
@@ -94,6 +93,7 @@ For each section below, spawn integration agents as described:
      - **Add cultural elements** that complicate character goals based on who they are
      - **Use world as character** - make it active in creating conflict and tension
      - Focus on making the world feel designed for THIS specific story and characters, not generic
+   - Output: Return brief summary (max 30 words): key integration enhancements made
 
 ### Final Pass: Cohesion Check
 
@@ -103,18 +103,14 @@ For each section below, spawn integration agents as described:
      - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
-   - Writes: `story-dossier/projects/<project-name>/lightweight/cohesion-report.md`
    - Reviews:
-     - **Amplification**: Do sections now amplify each other? (list specific examples)
+     - **Amplification**: Do sections now amplify each other?
      - **Cohesion**: Do the story, characters, and world feel like an integrated whole?
-     - **Consistency**: Were any contradictions introduced during integration? (if yes, flag for fixing)
+     - **Consistency**: Were any contradictions introduced during integration?
      - **Uniqueness**: Does this feel like a specific, unique story (not generic)?
      - **Theme**: Do all sections serve the core themes?
      - **Character-World Fit**: Do the characters feel native to this world?
-   - Output:
-     - Highlight successful integrations (with examples)
-     - Flag any issues that need manual review
-     - Assess overall story cohesion (scale 1-10 with justification)
+   - Output: Return brief assessment (max 40 words): overall cohesion rating (1-10), key strengths, any issues found
 
 ---
 
@@ -129,8 +125,20 @@ For each section below, spawn integration agents as described:
    - **Step 2:** Spawn cohesion_check_agent using a SINGLE Task tool call (the Task tool will return when the agent completes its work)
    - After the Task tool returns, update `story-dossier/projects/<project-name>/workflow-state.json` and report progress
 5. When complete:
+   - Collect brief summaries from character_integration, world_integration, and cohesion_check agents
+   - Update `story-dossier/projects/<project-name>/SUMMARY.md` by appending Phase 3 section:
+     ```markdown
+     ## Phase 3: Integration (Completed)
+     Enhanced story cohesion by making all sections amplify each other.
+
+     **Character integration**: [insert character summary]
+     **World integration**: [insert world summary]
+     **Final assessment**: [insert cohesion check summary]
+
+     **Status**: Story dossier complete! All files in `lightweight/` directory.
+     ```
    - Set `story-dossier/projects/<project-name>/workflow-state.json`: `"phase": "integration_complete"`, `"integration_complete": true`
-   - Tell user: "Phase 3 complete for '<project-name>'! Your story dossier is now fully integrated. Review the integration-notes files in story-dossier/projects/<project-name>/lightweight/ to see what was enhanced. Check cohesion-report.md for overall assessment."
+   - Tell user: "Phase 3 complete for '<project-name>'! Your story dossier is ready. Review SUMMARY.md for the full report and your story files in lightweight/."
 
 **Important**:
 - All agents must use the story-architect subagent type (this is a custom agent optimized for story development)

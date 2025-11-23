@@ -18,7 +18,8 @@ You are the Story Dossier Validation Orchestrator. Your job is to validate the l
 3. **Set the project paths** for this workflow:
    - Input file: `story-dossier/projects/<project-name>/input.yaml`
    - Workflow state: `story-dossier/projects/<project-name>/workflow-state.json`
-   - Output directory: `story-dossier/projects/<project-name>/lightweight/`
+   - Story files: `story-dossier/projects/<project-name>/lightweight/`
+   - Workflow files: `story-dossier/projects/<project-name>/.workflow/` (internal validation reports)
 
 **CRITICAL: You must read MINIMAL context to avoid bloating. Only read:**
 1. `story-dossier/projects/<project-name>/input.yaml` - user inputs
@@ -57,7 +58,7 @@ For each section below, spawn agents as described:
      - `story-dossier/projects/<project-name>/input.yaml`
      - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
-   - Writes: `story-dossier/projects/<project-name>/lightweight/character-consistency-check.md`
+   - Writes: `story-dossier/projects/<project-name>/.workflow/character-consistency-check.md`
    - Reviews:
      - Do character traits support their planned actions?
      - Do backgrounds logically lead to their current state?
@@ -69,10 +70,9 @@ For each section below, spawn agents as described:
 2. **character_resolver_agent**: Fix identified issues
    - Reads:
      - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
-     - `story-dossier/projects/<project-name>/lightweight/character-consistency-check.md`
+     - `story-dossier/projects/<project-name>/.workflow/character-consistency-check.md`
    - Edits: `story-dossier/projects/<project-name>/lightweight/02-character-concept.md` (fixes contradictions in place)
-   - Writes: `story-dossier/projects/<project-name>/lightweight/character-resolution-notes.md`
-   - Task: Fix each issue identified by the consistency agent, document what was changed and why
+   - Task: Fix each issue identified by the consistency agent. At the end, return a brief summary: how many issues were found and what types of fixes were made (e.g., "Fixed 3 issues: trait contradictions, unclear motivation, backstory alignment")
 
 ### Section 2: World-Building
 
@@ -82,7 +82,7 @@ For each section below, spawn agents as described:
      - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
-   - Writes: `story-dossier/projects/<project-name>/lightweight/world-consistency-check.md`
+   - Writes: `story-dossier/projects/<project-name>/.workflow/world-consistency-check.md`
    - Reviews:
      - Do world rules make internal sense?
      - Do magic system rules follow logical constraints?
@@ -93,10 +93,9 @@ For each section below, spawn agents as described:
 2. **world_resolver_agent**: Fix identified issues
    - Reads:
      - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
-     - `story-dossier/projects/<project-name>/lightweight/world-consistency-check.md`
+     - `story-dossier/projects/<project-name>/.workflow/world-consistency-check.md`
    - Edits: `story-dossier/projects/<project-name>/lightweight/03-world-concept.md` (fixes contradictions in place)
-   - Writes: `story-dossier/projects/<project-name>/lightweight/world-resolution-notes.md`
-   - Task: Fix each issue identified by the consistency agent, document what was changed and why
+   - Task: Fix each issue identified by the consistency agent. At the end, return a brief summary: how many issues were found and what types of fixes were made (e.g., "Fixed 4 issues: magic system logic, setting contradictions, rule conflicts")
 
 ### Step 3: Global Consistency Check
 
@@ -106,7 +105,7 @@ For each section below, spawn agents as described:
      - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
-   - Writes: `story-dossier/projects/<project-name>/lightweight/final-consistency-report.md`
+   - Writes: `story-dossier/projects/<project-name>/.workflow/final-consistency-report.md`
    - Reviews:
      - Cross-section consistency (do all parts work together?)
      - Overall coherence and logic
@@ -121,22 +120,18 @@ For each section below, spawn agents as described:
 1. **global_resolver_agent**: Fix cross-section issues identified by global consistency check
    - Agent Type: story-architect (uses validation and resolution expertise)
    - Reads:
-     - `story-dossier/projects/<project-name>/lightweight/final-consistency-report.md`
+     - `story-dossier/projects/<project-name>/.workflow/final-consistency-report.md`
      - `story-dossier/projects/<project-name>/lightweight/01-story-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/02-character-concept.md`
      - `story-dossier/projects/<project-name>/lightweight/03-world-concept.md`
    - Edits: Any of the core concept files (01, 02, 03) that need fixes for cross-section issues
-   - Writes: `story-dossier/projects/<project-name>/lightweight/global-resolution-notes.md`
    - Task: You are a story-architect agent. Review the final-consistency-report.md and resolve each cross-section issue by editing the appropriate concept files:
      - **Character-World Mismatches**: Adjust character backgrounds, abilities, or traits to fit naturally in the world rules, OR adjust world rules to accommodate the characters if that makes more narrative sense
      - **Story-World Contradictions**: Ensure the world's magic system, culture, and setting support the story premise without contradictions
      - **Thematic Alignment**: Make sure story premise, character arcs, and world details all serve the core themes consistently
      - **Cross-Section Logic Issues**: Fix any remaining contradictions that span multiple sections (e.g., character ability that violates world magic rules)
      - **Choose the Best Fix**: When multiple solutions exist, pick the one that strengthens the overall story most
-   - Output Requirements:
-     - Edit the concept files in place to fix all issues
-     - Document in global-resolution-notes.md: what issue was found, which file(s) were edited, what specific changes were made, and why that solution was chosen
-     - Use your story-architect expertise to ensure fixes maintain narrative quality and don't introduce new problems
+   - Output: Return a brief summary (max 50 words): how many cross-section issues were found and what types of fixes were applied
 
 ---
 
@@ -156,8 +151,20 @@ For each section below, spawn agents as described:
    - **Step 4:** Spawn global_resolver_agent using Task tool
    - Wait for completion, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
 6. When complete:
+   - Collect the brief summaries from character_resolver, world_resolver, and global_resolver agents
+   - Update `story-dossier/projects/<project-name>/SUMMARY.md` by appending Phase 2 section:
+     ```markdown
+     ## Phase 2: Validation (Completed)
+     Validated story concepts for consistency and logic. Fixed all contradictions.
+
+     **Character fixes**: [insert character_resolver summary]
+     **World fixes**: [insert world_resolver summary]
+     **Cross-section fixes**: [insert global_resolver summary]
+
+     **Next**: Run `/integrate-story <project-name>` to enhance cohesion
+     ```
    - Set `story-dossier/projects/<project-name>/workflow-state.json`: `"phase": "validation_complete"`, `"deep_complete": true`
-   - Tell user: "Phase 2 complete for '<project-name>'! Your lightweight concepts have been validated and all issues resolved. Review the consistency reports and resolution notes in story-dossier/projects/<project-name>/lightweight/ to see what was checked and fixed. Run `/integrate-story <project-name>` for Phase 3."
+   - Tell user: "Phase 2 complete for '<project-name>'! All story contradictions resolved. Review SUMMARY.md for details, then run `/integrate-story <project-name>`."
 
 **Important**:
 - All agents must use the story-architect subagent type (this is a custom agent optimized for story development)

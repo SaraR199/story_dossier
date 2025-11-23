@@ -55,7 +55,21 @@ After each agent completes:
 
 After Phase 1 completes:
 - Set `story-dossier/projects/<project-name>/workflow-state.json` phase to "lightweight_complete"
-- Tell user: "Phase 1 complete for '<project-name>'! Review the files in story-dossier/projects/<project-name>/lightweight/ and run `/deepen-story <project-name>` when ready for Phase 2 validation."
+- Create/update `story-dossier/projects/<project-name>/SUMMARY.md` with Phase 1 summary:
+  ```markdown
+  # Story Dossier Summary: <project-name>
+
+  ## Phase 1: Generation (Completed)
+  Generated initial story concepts:
+  - ✓ Story concept (premise, themes, tone)
+  - ✓ Character concepts (main characters with traits, conflicts, arcs)
+  - ✓ World concept (magic system, setting, rules)
+
+  **Story Files**: `lightweight/01-story-concept.md`, `02-character-concept.md`, `03-world-concept.md`
+
+  **Next**: Run `/deepen-story <project-name>` to validate and refine
+  ```
+- Tell user: "Phase 1 complete for '<project-name>'! Your story files are in story-dossier/projects/<project-name>/lightweight/. Review SUMMARY.md for details, then run `/deepen-story <project-name>`."
 
 ---
 
@@ -71,7 +85,9 @@ After Phase 1 completes:
    - **Step 2:** Spawn character_concept_agent AND world_concept_agent IN PARALLEL by using TWO Task tool calls in a SINGLE message
    - Wait for both to complete, update `story-dossier/projects/<project-name>/workflow-state.json`, report progress
 6. Pass detailed instructions to each agent about what to read and write (using full project paths)
-7. When all 3 agents complete, announce Phase 1 done for this project
+7. When all 3 agents complete:
+   - Create `story-dossier/projects/<project-name>/SUMMARY.md` with Phase 1 summary
+   - Announce Phase 1 done for this project
 
 **Important**:
 - All agents must use the story-architect subagent type (this is a custom agent optimized for story development)
