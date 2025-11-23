@@ -20,7 +20,7 @@
 ### External Goals & Obstacles
 **Primary Goal:** Understand what she is, who her father was, and why someone engineered her awakening. She needs answers to reclaim her sense of self.
 
-**Secondary Goal:** Learn to control her abilities before they control her (or before the Veil Commission decides she's too dangerous to leave free).
+**Secondary Goal:** Learn to control her abilities before they control her (or before the Veil Commission decides she's too dangerous to leave free). Her awakened magic manifests as boundary-sensing and barrier manipulation—she can feel the Veil's weak points, sense supernatural presences that others miss, and intuitively both create and destabilize magical barriers. Her destructive capability manifested first (shattering the ancient ward, accidentally breaking through protections), but as she trains, she discovers she can also create wards instinctively—unconsciously shielding herself when threatened or reinforcing barriers she touches. This dual nature makes her both uniquely valuable for investigating the Veil's deterioration and uniquely dangerous if her powers spiral out of control.
 
 **Tertiary Goal:** Protect her mundane life and the people in it from supernatural fallout. She doesn't want Riley or her mother dragged into this danger.
 
@@ -53,11 +53,13 @@
 ### Core Personality & Voice
 **Ancient enforcer trying to adapt to modern chaos.** Kieran is over three hundred years old—old enough to remember when the Veil Commission was formed, old enough to have seen countless supernatural conflicts resolved through order and structure. He's fae (specifically, one of the Thornborn—a bloodline tied to boundary magic and enforcement), which makes him long-lived, magic-sensitive, and deeply connected to maintaining barriers between worlds. This history gives him gravitas, patience, and a dry wit born from watching centuries of human (and supernatural) folly.
 
-**By-the-book... until the book stops making sense.** Kieran built his identity around being the Commission's most reliable investigator. He follows protocol, respects hierarchy, and believes order prevents chaos. He's thorough, methodical, and maddeningly calm under pressure. But this isn't rigidity for its own sake—he's seen what happens when supernatural power goes unchecked. Rules are how he protects people.
+**By-the-book... until the book stops making sense.** Kieran built his identity around being the Commission's most reliable investigator. He follows protocol, respects hierarchy, and believes order prevents chaos. He's thorough, methodical, and maddeningly calm under pressure. His magical specialty is binding magic—creating enforceable contracts, oaths, and agreements that carry supernatural weight. This specialty reinforces his worldview: he believes in the power of structure, the importance of keeping one's word, and the value of clear agreements that prevent misunderstanding. His entire investigative approach centers on establishing terms, ensuring compliance, and building frameworks that maintain order. But this isn't rigidity for its own sake—he's seen what happens when supernatural power goes unchecked. Rules are how he protects people.
 
 **Quietly protective with a guardianship complex.** The Thornborn were historically wardens and protectors of boundaries. This instinct runs deep in Kieran—he feels compelled to shield the vulnerable, maintain balance, and prevent harm. It's both his greatest strength and his fatal flaw, because it can shade into paternalism or controlling behavior when he's afraid.
 
 **Dry humor and cultural disconnect.** Kieran navigates the modern world competently but with the bemused detachment of someone who remembers when things were "simpler" (they weren't). He has a bone-dry sense of humor that plays against Mara's sharper sarcasm, and he's prone to accidentally archaic phrasing when stressed. He's quietly charmed by modern human creativity and chaos, even when it exasperates him.
+
+**Truth-bound by nature.** As a Thornborn fae, Kieran is fundamentally incapable of speaking outright lies—his nature forbids it. This doesn't mean he's always forthcoming; he's mastered the art of careful wording, selective omission, and technically-true-but-misleading statements. When questioned directly, he must either answer truthfully, deflect with precision, or remain silent. This limitation shapes his communication style: he chooses words meticulously, speaks in layers, and sometimes goes frustratingly quiet rather than lie. It also makes him deeply trustworthy once someone learns to ask the right questions—his evasions are tells, and his direct answers are absolute truth.
 
 ### Internal Conflict & Emotional Wounds
 **Duty vs. desire—the weight of centuries.** Kieran has spent three centuries prioritizing the Commission's mission over personal wants. He's had relationships but never let them interfere with his work. The instant recognition he feels when his magic touches Mara's is both exhilarating and terrifying—it's desire he can't rationalize away or compartmentalize. For the first time, duty and destiny are pulling him in opposite directions.
@@ -67,6 +69,8 @@
 **Identity crisis: enforcer or enabler?** Mara's outsider questions force Kieran to examine whether he's been protecting the system or protecting people. Has he become so focused on maintaining order that he's stopped questioning whether that order is just? Are the rules he's enforced for centuries part of the problem? This shakes his foundational sense of purpose.
 
 **The burden of foreknowledge.** Kieran knows how dangerous the supernatural world is. He's seen what happens to untrained magic users, to humans caught in factional conflicts, to those who challenge the wrong powers. His protective instinct toward Mara is tinged with dread—he can see a dozen ways this ends badly, and he's desperate to prevent them all.
+
+**Truth-binding complicates everything.** His inability to lie creates profound complications during the investigation and their developing relationship. When Mara asks direct questions about Commission protocols, his feelings, or the dangers she faces, he must choose between truth that might frighten her, evasive answers that erode trust, or silence that feels like rejection. The fated mates bond makes this worse—he can't lie about the pull he feels, can't pretend professional detachment when asked directly. This vulnerability terrifies him. Every conversation becomes a strategic dance of what he can safely admit versus what he must protect her from knowing.
 
 ### External Goals & Obstacles
 **Primary Goal:** Determine how Mara broke through the Veil, whether she's a threat, and what her bloodline origins are. As the investigation deepens, this evolves into protecting her from those who'd exploit or eliminate her.
@@ -81,6 +85,7 @@
 - Someone within the supernatural power structure engineered Mara's awakening, suggesting institutional corruption
 - Training Mara means revealing Commission secrets and methods to someone under investigation
 - Three centuries of conditioning tells him to trust the system; Mara's presence reveals the system's cracks
+- As fae, he's vulnerable to iron—it disrupts his magic and weakens him physically. Mara's mundane world is filled with iron and steel (railings, construction, modern infrastructure), creating constant low-level discomfort and limiting where he can operate at full strength
 
 ### Character Arc Trajectory
 **Rigidity → Questioning → Rebellion**
@@ -98,6 +103,7 @@
 - **Protector who must learn to partner:** His guardianship instinct is attractive but also problematic—he grows by learning Mara doesn't need saving, she needs support
 - **Ancient perspective on modern problems:** His centuries of experience create both wisdom and blind spots, making him a rich source of worldbuilding and character conflict
 - **Slow burn vulnerability:** Watching a controlled, disciplined enforcer slowly unravel under the weight of genuine connection is deeply satisfying. His emotional walls cracking open creates powerful intimate moments
+- **Binding magic creates ethical tension:** His specialty in creating magically enforced contracts raises constant questions—will he bind Mara to Commission protocols for her safety or the Veil's protection? Will he offer her binding protections (oaths that ensure her safety) or does using his specialty on her feel like coercion? His refusal to bind her, even when it would solve problems, becomes a powerful statement of trust and respect for her agency
 
 ## Their Dynamic
 
@@ -110,7 +116,7 @@
 
 **Destiny vs. Choice:** The fated mates bond is their biggest source of conflict. Kieran feels it and wants to honor it, even as it complicates his investigation. Mara feels it and resents that her body responds to someone she barely knows, someone who's investigating her like a criminal. They both want to choose each other freely, but how do you know what's real when magic is telling you what to feel?
 
-**Vulnerability vs. Control:** Mara's defense mechanism is sarcasm and deflection; Kieran's is cool professionalism. Both are deeply guarded people who use different armor. Getting them to drop those defenses requires breaking them down slowly, and every moment of genuine vulnerability feels hard-won and precious.
+**Vulnerability vs. Control:** Mara's defense mechanism is sarcasm and deflection; Kieran's is cool professionalism. Both are deeply guarded people who use different armor. Getting them to drop those defenses requires breaking them down slowly, and every moment of genuine vulnerability feels hard-won and precious. Kieran's truth-binding nature adds another layer—he can't lie to protect himself emotionally, only evade or stay silent, which Mara learns to read as its own form of truth. His inability to deceive her becomes a pathway to trust, even when his evasions frustrate her.
 
 ### How They Complement Each Other
 **Truth-Seekers in Different Ways:** Both are fundamentally investigators. Mara photographs the overlooked and asks uncomfortable questions. Kieran investigates supernatural mysteries and follows evidence. When they stop working against each other and start working together, they're formidable—her creative instincts and his methodical knowledge combine powerfully.
@@ -158,9 +164,9 @@ Facing the climax of the external plot, they fight together as true partners. In
 
 **Role:** Comic relief, emotional grounding, represents Mara's mundane life and the cost of keeping secrets.
 
-**Core Concept:** Riley is Mara's college roommate turned lifelong best friend—a warm, extroverted social worker who balances Mara's cynicism with relentless optimism. She's the person Mara calls at 2am, the one who knows all Mara's tells. Riley doesn't know about the supernatural world (Veil rules forbid revealing it to mundane humans), which means Mara must lie to her closest friend for the first time in their relationship.
+**Core Concept:** Riley is Mara's college roommate turned lifelong best friend—a warm, extroverted social worker who balances Mara's cynicism with relentless optimism. She's the person Mara calls at 2am, the one who knows all Mara's tells. Riley doesn't know about the supernatural world (Veil rules forbid revealing it to mundane humans), which means Mara must lie to her about something this significant for the first time—a betrayal that weighs heavily on their usually transparent relationship.
 
-**Personality:** Empathetic, chatty, nosy in a loving way, refuses to let Mara self-isolate. She's the "adopt all the strays" type who sees the good in everyone. She's also sharp—she knows when Mara is lying and calls her on it, even if she doesn't know what the truth is.
+**Personality:** Empathetic, chatty, nosy in a loving way, refuses to let Mara self-isolate. She's the "adopt all the strays" type who sees the good in everyone. She's also sharp—she knows Mara's tells from years of watching her deflect questions from nosy relatives or dodge uncomfortable topics with acquaintances, so she recognizes when Mara is hiding something, even if she doesn't know what the truth is.
 
 **Function in Story:**
 - Provides contrast to supernatural intensity—scenes with Riley are breathers that reconnect Mara (and readers) to normal life
@@ -168,7 +174,7 @@ Facing the climax of the external plot, they fight together as true partners. In
 - Potential danger point: if Riley gets caught in supernatural crossfire, the stakes become deeply personal
 - Offers outside perspective on Mara's relationship with Kieran (once she meets him, she'll have Opinions)
 
-**Arc:** Might discover the truth accidentally in the climax, forcing the choice of whether to keep her memory or let her keep the secret.
+**Arc:** Might discover the truth accidentally in the climax, forcing the choice of whether to modify her memory (make her forget the supernatural world entirely, as Commission protocol demands) or allow her to keep the secret (trusting her with the truth and defying standard containment procedures). This decision tests Mara's values—does she protect Riley through erasure or trust her best friend with dangerous knowledge?
 
 ### Lena Corvus - Kieran's Commission Superior & Institutional Antagonist
 
@@ -191,9 +197,9 @@ Facing the climax of the external plot, they fight together as true partners. In
 
 **Role:** Teaches Mara supernatural culture and magical control, provides alternative perspective to Kieran's official view, potential source of crucial information.
 
-**Core Concept:** Toby is a hybrid like Mara—human mother, supernatural father (werewolf pack lineage)—who grew up navigating both worlds. He runs a supernatural-friendly bar in Portland's hidden district and acts as an informal community hub. He's seen the Commission's heavy-handedness firsthand and is sympathetic to those caught between worlds. Kieran reluctantly admits he's the best option to help Mara acclimate.
+**Core Concept:** Toby is a hybrid like Mara—human mother, supernatural father (werewolf pack lineage)—who grew up navigating both worlds. Unlike Mara, whose powers remained dormant until adulthood, Toby's abilities manifested in childhood because his father stayed involved during his formative years—teaching him to shift, introducing him to pack culture, and helping him understand his dual nature. His father eventually returned to his pack when Toby was a teenager, leaving him to navigate adulthood alone, but by then Toby had the foundation and knowledge Mara was denied. This abandonment still stung, but four decades of processing have turned the wound into a scar—present but no longer raw. He runs a supernatural-friendly bar in Portland's hidden district and acts as an informal community hub. He's seen the Commission's heavy-handedness firsthand and is sympathetic to those caught between worlds. Kieran reluctantly admits he's the best option to help Mara acclimate.
 
-**Personality:** Laid-back, irreverent, uses humor to defuse tension. He's in his forties (young for a supernatural), with the easy confidence of someone comfortable in his own skin. He doesn't kowtow to Commission authority, which both amuses and frustrates Kieran. Genuinely kind beneath the casual exterior.
+**Personality:** Laid-back, irreverent, uses humor to defuse tension. He's in his forties (young for a supernatural), with the easy confidence of someone who's made peace with his complicated history. His casual exterior is genuine but hard-won—he spent years working through anger and abandonment before reaching this equilibrium. He doesn't kowtow to Commission authority, which both amuses and frustrates Kieran. Genuinely kind beneath the casual exterior, particularly toward others navigating identity crises he understands intimately.
 
 **Function in Story:**
 - Teaches Mara practical magic and supernatural social norms without the institutional bias
@@ -202,7 +208,7 @@ Facing the climax of the external plot, they fight together as true partners. In
 - Source of information about supernatural community perspectives and underground networks
 - Comic relief through his teasing of Kieran's stuffiness
 
-**Arc:** Becomes a trusted ally who helps Mara and Kieran navigate the conspiracy from the community side, offering resources and connections the Commission doesn't have.
+**Arc:** Becomes a trusted ally who helps Mara and Kieran navigate the conspiracy from the community side, offering resources and connections the Commission doesn't have. His mentorship of Mara carries extra weight—he sees his younger self in her confusion and anger, and is determined to give her the support system he had to build for himself. When she struggles with her father's abandonment, Toby can speak from lived experience about processing that loss without letting it define her.
 
 ---
 
